@@ -3,44 +3,28 @@
 <title>Dendrobox</title>
 <style>
 @import url("./style/style.css");
-
-<!-- path { -->
-<!--   stroke: ; -->
-<!--   stroke-width: 0.25px; -->
-<!--   fill: grey; -->
-<!-- } -->
-
-path { 
-    stroke: darkgrey;
-    stroke-width: 1;
-    fill: none;
-}
-
-.axis path,
-.axis line {
-	fill: none;
-	stroke: steelblue;
-	stroke-width: 2;
-	shape-rendering: crispEdges;
-}
-
 </style>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 
-<div class="header">
-  <img src="./img/douglass_2.jpg" width = 60px>
+<div id="header">
+  <img src="./img/douglass_2.jpg" width = "60px">
   <a class="title" href="index.html">Dendrobox</a>
-  <span class="subtitle">An Interactive Tree-Ring Data Exploration Tool</span>
+  <p><a href="about.html" alt="about this project">/// About</a></p>
+  <p>Made with <span class="heart">&hearts;</span>
+  by <a href="http://czang.org">czang</a>.</p>
+  <p>View project
+  on <a href="http://github.com/cszang/dendrobox">GitHub</a>.</p>
 </div>
 
-<div id="itrdbmap"></div>
-<div id="itrdbinfo"><span style="color:red;">&rArr;</span> Scroll to zoom map, drag to pan.</div>
-<div id="chronograph"></div>
+<div id="content">
 
-<script src="./src/map.js"></script>
+  <div id="itrdbmap" class="map"></div>
+  <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
+  <div id="chronograph" class="chrono"></div>
+  <div id="climateinfo" class="climate"></div>
+  <div id="dendroclim" class="dendroclim"></div>
+  <script src="./src/map.js"></script>
 
-<div class="footer">
-  <a href="about.html" alt="about this project">About</a> /// Made with &hearts; by <a href="http://czang.org">czang</a> /// View project on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
 </div>

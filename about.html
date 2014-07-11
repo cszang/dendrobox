@@ -5,37 +5,39 @@
 @import url("./style/style.css");
 </style>
 
-<div class="header">
-  <img src="./img/douglass_2.jpg" width = 60px>
+<div id="header">
+  <img src="./img/douglass_2.jpg" width = "60px">
   <a class="title" href="index.html">Dendrobox</a>
-  <span class="subtitle">An Interactive Tree-Ring Data Exploration Tool</span>
+  <p><a href="index.html" alt="back to project main site">/// Home</a></p>
+  <p>Made with <span class="heart">&hearts;</span>
+  by <a href="http://czang.org">czang</a>.</p>
+  <p>View project
+  on <a href="http://github.com/cszang/dendrobox">GitHub</a>.</p>
 </div>
 
-<p><span class="dtext">Dendrobox</span> is an interactive exploration
-tool for tree-ring data and its connection to climate.</p>
+<div id="content">
+  <p><span class="dtext">Dendrobox</span> is an interactive exploration
+    tool for tree-ring data and its connection to climate.</p>
 
-<p>The data comes from
-the <a href="http://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/tree-ring"
-alt="ITRDB Website">International Tree-Ring Data Base</a>. Whereever
-possible, the original chronologies are used, when these were not
-available, new chronologies have been built from the raw measurements,
-using spline detrending (50% frequency cutoff at 67% of the curve
-length, using R
-package <a href="http://cran.r-project.org/web/packages/dplR/index.html">dplR</a>).</p>
-
-<p>In total, 2406 tree-ring chronologies are used for this
-project. This is not the complete ITRDB data set (roughly 400 series
-are missing), since I used only the chronologies or raw data files
-which adhered the
-ITRDB <a href="http://www.ncdc.noaa.gov/paleo/treeinfo.html">data
-formatting standards</a> and could be read in by dplR without
-errors.</p>
-
-<p>The visualization is done using <a href="http://d3js.org/"
-alt="D3.js">D3.js</a> and <a href="https://github.com/mbostock/topojson/wiki" alt="TopoJSON">TopoJSON</a>.</p>
-
+  <p>The data comes from
+  the <a href="http://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/tree-ring"
+         alt="ITRDB Website">International Tree-Ring Data Base</a>. Whereever
+    possible, the original chronologies are used, when these were not
+    available, new chronologies have been built from the raw measurements,
+    using spline detrending (50% frequency cutoff at 67% of the curve
+    length, using R
+    package <a href="http://cran.r-project.org/web/packages/dplR/index.html">dplR</a>).</p>
   
-
-<div class="footer">
-  <a href="index.html" alt="go back to main site">Home</a> /// Made with &hearts; by <a href="http://czang.org">czang</a> /// View project on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+  <p>In total, 2406 tree-ring chronologies are used for this
+    project. This is not the complete ITRDB data set (roughly 400 series
+    are missing), since I used only the chronologies or raw data files
+    which adhered the
+    ITRDB <a href="http://www.ncdc.noaa.gov/paleo/treeinfo.html">data
+      formatting standards</a> and could be read in by dplR without
+    errors.</p>
+  
+  <p>The visualization is done using <a href="http://d3js.org/"
+                                        alt="D3.js">D3.js</a>
+    and <a href="https://github.com/mbostock/topojson/wiki"
+           alt="TopoJSON">TopoJSON</a>.</p>
 </div>

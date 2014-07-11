@@ -4,10 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:20px;
+    /* width: 960px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-top:20px; */
 }
 
 h1 {
@@ -26,13 +26,45 @@ a:hover {
      border-bottom: 1px solid #FF3100;
 }
 
-div.header {
-    padding: 0px 0px 40px 0px;
-    /* background: yellow; */
+div#header {
+    position: fixed;
+    width: 200;
 }
 
-div.footer {
-    padding: 40px 0px 0px 0px;
+div#content {
+    /* position: absolute; */
+    margin-left: 350px;
+    padding: 30px 0px 0px 0px;
+    width: 800px;
+}
+
+div#itrdbmap {
+    border: 1px dotted #FF3100;
+}
+
+div#itrdbinfo {
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    top: 50px;
+    left: 370px;
+    background: url('../img/bg75.png');
+    display: inline-block;
+}
+
+div#chronograph {
+    padding: 20px 0px 0px 0px;
+}
+
+div#climateinfo {
+    padding: 20px 0px 0px 0px;
+    width: 350px;
+    float: left;
+}
+
+div#dendroclim {
+    padding: 20px 0px 0px 0px;
+    width: 450px;
+    float: right;
 }
 
 a.title {
@@ -55,15 +87,83 @@ span.dtext {
     font-size: 22px;
 }
 
+span.chartinfo {
+    color: #FF3100;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 22px;
+}
+
 p.info {
     padding: 2px;
 }
 
-div#itrdbmap {
-    border: 1px dotted #FF3100;
+
+
+span.heart {
+    color: #FF3100;
+    font-size: 22px;
 }
 
-div#itrdbinfo {
-    /* border: 1px dotted #FF3100; */
-    padding: 20px 20px 0px 0px;
+/* D3 Styles */
+
+/* the map */
+
+.map path { 
+    stroke: white;
+    stroke-width: 1;
+    fill: lightgrey;
 }
+
+/* the chronology */
+
+.chrono path { 
+    stroke: steelblue;
+    stroke-width: 1;
+    fill: none;
+}
+
+.chrono .axis path,
+.chrono .axis line {
+    fill: none;
+    stroke: darkgrey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.chrono .axis text {
+    color: darkgrey;
+    font-size: 12px;
+}
+
+/* the climate diagram */
+
+.climate path { 
+    stroke: #FF3100;
+    stroke-width: 3;
+    fill: none;
+}
+
+.climate .bar {
+  fill: steelblue;
+}
+
+.climate .bar:hover {
+  fill: #FF3100;
+}
+
+.climate .axis {
+  font: 10px sans-serif;
+}
+
+.climate .axis path,
+.climate .axis line {
+  fill: none;
+  stroke: darkgrey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.climate .x.axis path {
+  display: none;
+}
+
