@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Pacifico);
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -37,8 +37,8 @@ div.footer {
 
 a.title {
     color: #FF3100;
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    font-size: 44px;
     text-decoration: none;
     border-bottom: none;
 }
@@ -49,6 +49,21 @@ span.subtitle {
     padding: 0px 0px 0px 20px;
 }
 
+span.dtext {
+    color: #FF3100;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 22px;
+}
+
 p.info {
     padding: 2px;
+}
+
+div#itrdbmap {
+    border: 1px dotted #FF3100;
+}
+
+div#itrdbinfo {
+    /* border: 1px dotted #FF3100; */
+    padding: 20px 20px 0px 0px;
 }
