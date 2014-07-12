@@ -2,18 +2,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 400;
-    /* width: 960px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* margin-top:20px; */
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
 }
 
 h1 {
     color: #FF3100;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 a {
@@ -26,14 +26,31 @@ a:hover {
      border-bottom: 1px solid #FF3100;
 }
 
-div#header {
-    position: fixed;
-    width: 200;
+div#ptitle {
+    position: absolute;
+    /* background: grey; */
+    /* width: 800px; */
+    /* background: url('../img/bg75.png'); */
+}
+
+div#nav {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 65px;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+div#footer {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 div#content {
-    /* position: absolute; */
-    margin-left: 350px;
+    position: absolute;
+    /* margin-left: 350px; */
+    margin-top: 80px;
     padding: 30px 0px 0px 0px;
     width: 800px;
 }
@@ -43,10 +60,10 @@ div#itrdbmap {
 }
 
 div#itrdbinfo {
-    padding: 2px 2px 2px 2px;
+    padding: 2px;
     position: absolute;
-    top: 50px;
-    left: 370px;
+    top: 35px;
+    left: 10px;
     background: url('../img/bg75.png');
     display: inline-block;
 }
@@ -56,21 +73,26 @@ div#chronograph {
 }
 
 div#climateinfo {
-    padding: 20px 0px 0px 0px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 30px;
     width: 350px;
     float: left;
 }
 
 div#dendroclim {
-    padding: 20px 0px 0px 0px;
-    width: 450px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    width: 430px;
     float: right;
 }
 
 a.title {
     color: #FF3100;
     font-family: 'Pacifico', cursive;
-    font-size: 44px;
+    font-size: 4em;
     text-decoration: none;
     border-bottom: none;
 }
@@ -84,13 +106,13 @@ span.subtitle {
 span.dtext {
     color: #FF3100;
     font-family: 'Pacifico', sans-serif;
-    font-size: 22px;
+    font-size: 1.0em;
 }
 
 span.chartinfo {
     color: #FF3100;
     font-family: 'Pacifico', sans-serif;
-    font-size: 22px;
+    font-size: 1.8em;
 }
 
 p.info {
@@ -105,6 +127,22 @@ span.heart {
 }
 
 /* D3 Styles */
+
+/* overlays */
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.focus circle {
+    fill: none;
+    stroke: #FF3100;
+}
+
+.focus text {
+    font-size: 0.8em;
+}
 
 /* the map */
 
@@ -164,6 +202,38 @@ span.heart {
 }
 
 .climate .x.axis path {
+  display: none;
+}
+
+/* the dendroclimatology */
+
+.dendroclim path { 
+    stroke: #FF3100;
+    stroke-width: 3;
+    fill: none;
+}
+
+.dendroclim .bar {
+  fill: steelblue;
+}
+
+.dendroclim .bar:hover {
+  fill: #FF3100;
+}
+
+.dendroclim .axis {
+  font: 10px sans-serif;
+}
+
+.dendroclim .axis path,
+.dendroclim .axis line {
+  fill: none;
+  stroke: darkgrey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.dendroclim .x.axis path {
   display: none;
 }
 

@@ -24,8 +24,8 @@ var drawClimate = function(code) {
 
     var yAxisLeft = d3.svg.axis()
         .scale(y1)
-        .orient("left")
-        .ticks(10, "mm");
+        .orient("left");
+
 
     var yAxisRight = d3.svg.axis()
         .scale(y2)
@@ -87,7 +87,7 @@ var drawClimate = function(code) {
         svg.append("path")
             .datum(data)
             .attr("class", "line")
-            .attr("transform", "translate(15, 0)")
+            .attr("transform", "translate(10, 0)")
             .attr("d", line);
 
     });
@@ -100,15 +100,105 @@ var drawClimate = function(code) {
 
 };
 
+// DRAW RESPONSE
+
+var drawDendroclim = function(code) {
+
+    var margin = {top: 20, right: 20, bottom: 20, left: 30},
+        width = 430 - margin.left - margin.right,
+        height = 200;
+
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .2);
+
+    var y1 = d3.scale.linear()
+        .range([height, 0]);
+
+    var y2 = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .ticks(12)
+        .orient("bottom")
+
+    var yAxis = d3.svg.axis()
+        .scale(y1)
+        .orient("left");
+
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.month); })
+        .y(function(d) { return y2(d.temp); });
+
+    var svg = d3.select("#dendroclim").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var respfile = './data/resp/' + code.toLowerCase() + '.csv';
+    
+    d3.csv(respfile, type, function(error, data) {
+        x.domain(data.map(function(d) { return d.month; }));
+        var allprec = data.map(function(d) { return d.prec; });
+        var alltemp = data.map(function(d) { return d.temp; });
+        var allcoef = allprec.concat(alltemp);
+        y1.domain(d3.extent(allcoef));
+        y2.domain(d3.extent(allcoef));
+            
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("y", 6)
+            .attr("dy", "-1.2em")
+            .attr("dx", "1.2em")
+            .style("text-anchor", "end")
+            .text("Coef");
+
+        svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) {
+                return x(d.month); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) {
+                return y1(Math.max(d.prec, 0)); })
+            .attr("height", function(d) {
+                return Math.abs(y1(d.prec) - y1(0)); });
+
+        svg.append("path")
+            .datum(data)
+            .attr("class", "line")
+            .attr("transform", "translate(10, 0)")
+            .attr("d", line);
+
+    });
+
+    function type(d) {
+        d.temp = +d.temp;
+        d.prec = +d.prec;
+        return d;
+    }
+};
+
 // DRAW CHRONOLOGY
 
 var drawChrono = function(code) {
 
-    var margin = {top: 20, right: 20, bottom: 20, left: 20},
+    var margin = {top: 20, right: 20, bottom: 20, left: 30},
     width =  800 - margin.left - margin.right,
     height = 200 - margin.top - margin.bottom;
     
-    var parseDate = d3.time.format("%Y").parse;
+    var parseDate = d3.time.format("%Y").parse,
+        bisectDate = d3.bisector(function(d) { return d.year; }).left,
+        formatInfo = function(d) { return d.rawyear; };
 
     var x = d3.time.scale()
         .range([0, width]);
@@ -140,6 +230,7 @@ var drawChrono = function(code) {
 
     d3.csv(crnfile, function(error, data) {
         data.forEach(function(d) {
+            d.rawyear = d.year;
             d.year = parseDate(d.year);
             d.rwi = +d.rwi;
         });
@@ -167,6 +258,35 @@ var drawChrono = function(code) {
             .datum(data)
             .attr("class", "line")
             .attr("d", line);
+
+        var focus = svg.append("g")
+            .attr("class", "focus")
+            .style("display", "none");
+        
+        focus.append("circle")
+            .attr("r", 4.5);
+
+        focus.append("text")
+            .attr("x", 9)
+            .attr("dy", ".35em");
+
+        svg.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .on("mouseover", function() { focus.style("display", null); })
+            .on("mouseout", function() { focus.style("display", "none"); })
+            .on("mousemove", mousemove);
+        
+        function mousemove() {
+            var x0 = x.invert(d3.mouse(this)[0]),
+                i = bisectDate(data, x0, 1),
+                d0 = data[i - 1],
+                d1 = data[i],
+                d = x0 - d0.year > d1.year - x0 ? d1 : d0;
+            focus.attr("transform", "translate(" + x(d.year) + "," + y(d.rwi) + ")");
+            focus.select("text").text(formatInfo(d));
+  }
     });
 };
 
@@ -214,6 +334,7 @@ d3.json("./data/world-110m2.json", function(error, topology) {
                 d3.select("#dendroclim").html("<span class=\"chartinfo\">Dendroclimatology</span>")
                 drawChrono(d.code)
                 drawClimate(d.code)
+                drawDendroclim(d.code)
             })
             .append("svg:title")
             .text(function(d) {
