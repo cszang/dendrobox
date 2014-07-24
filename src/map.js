@@ -356,7 +356,8 @@ var zoom = d3.behavior.zoom()
         g.attr("transform","translate("+ 
                d3.event.translate.join(",")+")scale("+d3.event.scale+")");
         g.selectAll("circle")
-            .attr("d", path.projection(projection));
+            .attr("d", path.projection(projection))
+            .attr("r", 3/d3.event.scale);
         g.selectAll("path")  
             .attr("d", path.projection(projection)); 
         
