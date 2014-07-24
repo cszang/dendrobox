@@ -296,9 +296,9 @@ var width = 800;
 var height = 500;
 
 var projection = d3.geo.mercator()
-    .center([50, 50])
+    .center([0, 50])
     .scale(110)
-    .rotate([0, 0]);
+    .rotate([-10, 0, 0]);
 
 var imap = d3.select("#itrdbmap").append("svg")
     .attr("width", width)
@@ -359,8 +359,8 @@ var zoom = d3.behavior.zoom()
             .attr("d", path.projection(projection))
             .attr("r", 3/d3.event.scale);
         g.selectAll("path")  
-            .attr("d", path.projection(projection)); 
-        
+            .attr("d", path.projection(projection))
+            .attr("", 1/d3.event.scale); 
     });
 
 imap.call(zoom)
