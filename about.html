@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Dendrobox</title>
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Dendrobox</title>
+    <link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
 
-<link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-<style>
-@import url("./style/style.css");
-</style>
-
-<div id="ptitle">
-  <img src="./img/douglass_2.jpg" width = "60px">
-  <a class="title" href="index.html">Dendrobox</a>
-</div>
-<div id="nav">
-  <a href="index.html" alt="back to project">&rArr; home</a>
-</div>
-
-<div id="content">
-  <p><span class="dtext">Dendrobox</span> is an interactive exploration
-    tool for tree-ring data and its connection to climate.</p>
-
-  <p>The data comes from
-  the <a href="http://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/tree-ring"
-         alt="ITRDB Website">International Tree-Ring Data Base</a>.</p>
-  
-  <p>In total, 2406 tree-ring chronologies are used for this
-    project. This is not the complete ITRDB data set (roughly 400 series
-    are missing), since I used only the chronologies or raw data files
-    which adhered the
-    ITRDB <a href="http://www.ncdc.noaa.gov/paleo/treeinfo.html">data
-      formatting standards</a> and could be read in by dplR without
-    errors.</p>
-
-  <p>The <span class="dtext">Chronology</span> graph shows the standard
-    chronology for the site. Whereever possible, the original
-    chronologies are used, when these were not available, new
-    chronologies have been built from the raw measurements, using
-    spline detrending (50% frequency cutoff at 67% of the curve
-    length, using R
-    package <a href="http://cran.r-project.org/web/packages/dplR/index.html">dplR</a>).</p>
-
-  <p>The <span class="dtext">Climate</span> graph shows the
-    climatology of the site at point, as monthly precipitation sums
-    (blue bars) and temperature means (red line) for the climate normal
-    period 1961-1990. CRU TS 3.21 gridded monthly climate data is used,
-    for each site the four nearest gridpoints are interpolated using
-    inverse distance weighting.</p>
-  
-  <p>The <span class="dtext">Dendroclimatology</span> graph shows the
-    response functions from previous June through current September for
-    temperature (red line) and precipitation (blue bars). Response
-    functions are computed with bootstrapped principal component
-    regression, using R
-    package <a href="http://github.com/cszang/treeclim">treeclim</a>.</p>
-  
-  <p>The visualization is done using <a href="http://d3js.org/"
-    alt="D3.js">D3.js</a>
-    and <a href="https://github.com/mbostock/topojson/wiki"
-    alt="TopoJSON">TopoJSON</a>.</p>
-
-  <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"
-    style="border-bottom: none"><img alt="This work is licensed under
-    the Creative Commons Attribution-ShareAlike license."
-    style="border-width: 0"
-    src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>&nbsp;This
-    work is licensed under the Creative Commons Attribution-ShareAlike
-    license.</a></p>
-
-  <div id="footer">
-    Made with <span class="heart">&hearts;</span>
-    by <a href="http://czang.org">czang</a>.  View project
-    on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+  <div id="ptitle">
+    <img src="./img/douglass_2.jpg" width = "60px">
+    <a class="title" href="index.html">Dendrobox</a>
   </div>
-</div>
+  <div id="nav">
+    <a href="index.html" alt="back to project">&rArr; home</a>
+  </div>
+  
+  <div id="content">
+    <p><span class="dtext">Dendrobox</span> is an interactive
+      exploration tool for tree-ring data and its connection to
+      climate.</p>
+    
+    <p>The data comes from
+      the <a href="http://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/tree-ring"
+      alt="ITRDB Website">International Tree-Ring Data Base</a>.</p>
+    
+    <p>In total, 2406 tree-ring chronologies are used for this
+      project. This is not the complete ITRDB data set (roughly 400
+      series are missing), since I used only the chronologies or raw
+      data files which adhered the
+      ITRDB <a href="http://www.ncdc.noaa.gov/paleo/treeinfo.html">data
+      formatting standards</a> and could be read in by dplR without
+      errors.</p>
+    
+    <p>The <span class="dtext">Chronology</span> graph shows the
+      standard chronology for the site. Whereever possible, the
+      original chronologies are used, when these were not available,
+      new chronologies have been built from the raw measurements,
+      using spline detrending (50% frequency cutoff at 67% of the
+      curve length, using R
+      package <a href="http://cran.r-project.org/web/packages/dplR/index.html">dplR</a>).</p>
+    
+    <p>The <span class="dtext">Climate</span> graph shows the
+      climatology of the site at point, as monthly precipitation sums
+      (blue bars) and temperature means (red line) for the climate
+      normal period 1961-1990. CRU TS 3.21 gridded monthly climate
+      data is used, for each site the four nearest gridpoints are
+      interpolated using inverse distance weighting.</p>
+    
+    <p>The <span class="dtext">Dendroclimatology</span> graph shows
+      the response functions from previous June through current
+      September for temperature (red line) and precipitation (blue
+      bars). Response functions are computed with bootstrapped
+      principal component regression, using R
+      package <a href="http://github.com/cszang/treeclim">treeclim</a>.</p>
+    
+    <p>The visualization is done using <a href="http://d3js.org/"
+                                          alt="D3.js">D3.js</a>
+      and <a href="https://github.com/mbostock/topojson/wiki"
+             alt="TopoJSON">TopoJSON</a>.</p>
+    
+    <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"
+          style="border-bottom: none"><img alt="This work is licensed
+          under the Creative Commons Attribution-ShareAlike license."
+          style="border-width: 0"
+          src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>&nbsp;This
+          work is licensed under the Creative Commons
+          Attribution-ShareAlike license.</a></p>
+    
+    <div id="footer">
+      Made with <span class="heart">&hearts;</span>
+      by <a href="http://czang.org">czang</a>.  View project
+      on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+    </div>
+  </div>
+</html>

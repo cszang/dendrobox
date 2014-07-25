@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Dendrobox</title>
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Dendrobox</title>
+    <link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="vendor/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="vendor/topojson.v0.min.js" charset="utf-8"></script>
+  </head>
 
-<link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-<style>
-@import url("./style/style.css");
-</style>
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v0.min.js"></script>
-
-<div id="ptitle">
-  <img src="./img/douglass_2.jpg" width = "60px">
-  <a class="title" href="index.html">Dendrobox</a>
-</div>
-<div id="nav">
-  <a href="about.html" alt="about this project">What is this?</a>
-</div>
-
-<div id="content">
-
-  <div id="itrdbmap" class="map"></div>
-  <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
-  <div id="chronograph" class="chrono"></div>
-  <div id="climateinfo" class="climate"></div>
-  <div id="dendroclim" class="dendroclim"></div>
-  <script src="./src/map.js"></script>
-
-  <div id="footer">
-    Made with <span class="heart">&hearts;</span>
-    by <a href="http://czang.org">czang</a>.  View project
-    on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+  <div id="ptitle">
+    <img src="./img/douglass_2.jpg" width = "60px">
+    <a class="title" href="index.html">Dendrobox</a>
   </div>
-</div>
+  <div id="nav">
+    <a href="about.html" alt="about this project">What is this?</a>
+  </div>
+  
+  <div id="content">
+    
+    <div id="itrdbmap" class="map"></div>
+    <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
+    <div id="chronograph" class="chrono"></div>
+    <div id="climateinfo" class="climate"></div>
+    <div id="dendroclim" class="dendroclim"></div>
+    <script src="./src/map.js"></script>
+    
+    <div id="footer">
+      Made with <span class="heart">&hearts;</span>
+      by <a href="http://czang.org">czang</a>.  View project
+      on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+    </div>
+  </div>
+</html>
