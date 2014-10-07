@@ -152,6 +152,18 @@ span.heart {
     fill: lightgrey;
 }
 
+.countries path { 
+    stroke: white;
+    stroke-width: 1;
+    fill: lightgrey;
+}
+
+.states path { 
+    stroke: black;
+    stroke-width: 0.2;
+    fill: lightgrey;
+}
+
 /* the chronology */
 
 .chrono path { 

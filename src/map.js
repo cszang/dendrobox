@@ -309,7 +309,7 @@ var path = d3.geo.path()
 
 var g = imap.append("g");
 
-d3.json("./data/world-110m2.json", function(error, topology) {
+d3.json("./data/world_statesus2.json", function(error, topology) {
     
     d3.csv("./data/itrdb_clean.csv", function(error, data) {
         g.selectAll("circle")
@@ -341,14 +341,21 @@ d3.json("./data/world-110m2.json", function(error, topology) {
                 return d.studysite;
             });
     });
-    
-    
+
+    var states = topojson.object(topology, topology.objects.states);
+
     g.selectAll("path")
-        .data(topojson.object(topology, topology.objects.countries)
+        .data(topojson.object(topology, topology.objects.countries )
               .geometries)
         .enter()
         .append("path")
+        .attr("class", "countries")
         .attr("d", path)
+
+    g.append("path")
+        .datum(states)
+        .attr("d", path);
+    
 });
 
 var zoom = d3.behavior.zoom()
