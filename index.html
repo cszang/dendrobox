@@ -19,8 +19,33 @@
   </div>
   
   <div id="content">
-    
+
     <div id="itrdbmap" class="map"></div>
+
+    <div id="specselectmenu" class="selector">
+
+      <select id="specselect" onchange="changeSelection();">
+        <option label"all species" selected>all species</option>
+        <optgroup label="Picea">
+          <option value="ABAL">ABAL</option>
+          <option value="PISY">PISY</option>
+        </optgroup>
+        <option value="LASI">LASI</option>
+      </select>
+      
+    </div>
+
+    <div id="resselectmenu" class="selector">
+
+      <select id="resselect" onchange="changeSelection();">
+        <option value="all investigators" selected>all investigators</option>
+        <option value="WRIGHT, W.">WRIGHT, W.</option>
+        <option value="COOK, E.R.">COOK, E.R.</option>
+        <option value="PEDERSON, G.T.">PEDERSON, G.T.</option>
+      </select>
+      
+    </div>
+
     <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
     <div id="chronograph" class="chrono"></div>
     <div id="climateinfo" class="climate"></div>

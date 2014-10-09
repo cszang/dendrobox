@@ -1,3 +1,68 @@
+// FUNCTION TO HIGHLIGHT SELECTIONS
+
+function changeSelection() {
+    var e = document.getElementById("specselect");
+    var species = e.options[e.selectedIndex].value;
+    var f = document.getElementById("resselect");
+    var investigator = f.options[f.selectedIndex].value;
+    console.log(investigator);
+    console.log(species);
+    if (investigator === "all investigators" & species === "all species") {
+        d3.selectAll("circle")
+            .style("fill-opacity", 1)
+            .style("fill", "steelblue");
+        console.log("case 1");
+    }
+    if (investigator === "all investigators" & species !== "all species") {
+        d3.selectAll("circle")
+            .style("fill-opacity", 1)
+            .style("fill", "steelblue")
+            .style('fill-opacity', function(d, i) { 
+                if (d.species === species) 
+                {return 1}
+                else {return 0.3}
+                ;})
+            .style('fill', function(d, i) { 
+                if (d.species === species) 
+                {return "steelblue"}
+                else {return "grey"}
+                ;})
+        console.log("case 2");
+    }
+    if (investigator !== "all investigators" & species === "all species") {
+        d3.selectAll("circle")
+            .style("fill-opacity", 1)
+            .style("fill", "steelblue")
+            .style('fill-opacity', function(d, i) { 
+                if (d.investigator === investigator) 
+                {return 1}
+                else {return 0.3}
+                ;})
+            .style('fill', function(d, i) { 
+                if (d.investigator === investigator) 
+                {return "steelblue"}
+                else {return "grey"}
+                ;})
+        console.log("case 3");
+    }
+    if (investigator !== "all investigators" & species !== "all species") {
+        d3.selectAll("circle")
+            .style("fill-opacity", 1)
+            .style("fill", "steelblue")
+            .style('fill-opacity', function(d, i) { 
+                if (d.investigator === investigator & d.species === species) 
+                {return 1}
+                else {return 0.3}
+                ;})
+            .style('fill', function(d, i) { 
+            if (d.investigator === investigator & d.species === species) 
+                {return "steelblue"}
+                else {return "grey"}
+                ;})
+        console.log("case 4");
+}
+};
+
 // MAP
 
 // DRAW CLIMATOLOGY
@@ -310,8 +375,9 @@ var path = d3.geo.path()
 var g = imap.append("g");
 
 d3.json("./data/world_statesus2.json", function(error, topology) {
-    
+
     d3.csv("./data/itrdb_clean.csv", function(error, data) {
+
         g.selectAll("circle")
             .data(data)
             .enter()
@@ -323,7 +389,7 @@ d3.json("./data/world_statesus2.json", function(error, topology) {
             .attr("cy", function(d) {
                 return projection([d.lon, d.lat])[1];
             })
-            .style("fill", "steelblue")
+            .style('fill', 'steelblue')
             .style("cursor", "pointer")
             .on("click", function(d) {
                 d3.select("#itrdbinfo").html('ITRDB-Code: ' + d.code + '<br>Study site: ' + d.studysite + '<br>Species: ' + d.species + '<br>Investigator: ' + d.investigator + '<br><a href=' + d.url + ' alt="Link to original data base entry" target="_blank">&rarr; get data</a>')
