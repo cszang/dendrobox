@@ -1,3 +1,23 @@
+// SET DOWNLOAD LINKS
+
+function setDownload(code, studysite, species, investigator, url) {
+
+    var climfile = './data/clim/' + code.toLowerCase() + '.csv';
+    var treefile = './data/tree/' + code.toLowerCase() + '.csv';
+    var respfile = './data/resp/' + code.toLowerCase() + '.csv';
+    
+    d3.select("#light").html('<p>Download data for:</p>' + '<p>ITRDB-Code: ' + code + '<br>Study site: ' + studysite + '<br>Species: ' + species + '<br>Investigator: ' + investigator + '</p><p><a href=' + url + ' alt="Link to original data base entry" target="_blank"><img src="./img/glyphicons_316_tree_conifer.png" width = "15px"></a><span class="dlinfo">Original data from ITRDB</span></p><p><a href=' + treefile + ' alt="Download chronology" target="_blank"><img src="./img/glyphicons_036_file.png" width = "15px"></a><span class="dlinfo">Chronology (CSV)</span></p><p><a href=' + climfile + ' alt="Download climate" target="_blank"><img src="./img/glyphicons_036_file.png" width = "15px"></a><span class="dlinfo">Climate average (CSV)</span></p><p><a href=' + respfile + ' alt="Download response coefficients" target="_blank"><img src="./img/glyphicons_036_file.png" width = "15px"></a><span class="dlinfo">Response coefficients (CSV)</span></p><p><a href = "javascript:void(0)" onclick = "document.getElementById(\'light\').style.display=\'none\';document.getElementById(\'fade\').style.display=\'none\'">Close window</a></p>')
+}
+
+
+// REFRESH CONTENT
+
+function refresh() {
+    window.location.reload(false);
+    document.getElementById("specselect").selectedIndex = 0;
+    document.getElementById("resselect").selectedIndex = 0;
+};
+
 // FUNCTION TO HIGHLIGHT SELECTIONS
 
 function changeSelection() {
@@ -9,58 +29,60 @@ function changeSelection() {
     console.log(species);
     if (investigator === "all investigators" & species === "all species") {
         d3.selectAll("circle")
+            .style("fill-opacity", 0)
+            .transition()
+            .duration(1000)
             .style("fill-opacity", 1)
-            .style("fill", "steelblue");
-        console.log("case 1");
+            .style("fill", "steelblue")
     }
     if (investigator === "all investigators" & species !== "all species") {
         d3.selectAll("circle")
-            .style("fill-opacity", 1)
-            .style("fill", "steelblue")
+            .style("fill-opacity", 0)
+             .transition()
+            .duration(1000)
             .style('fill-opacity', function(d, i) { 
                 if (d.species === species) 
                 {return 1}
-                else {return 0.3}
+                else {return 0}
                 ;})
             .style('fill', function(d, i) { 
                 if (d.species === species) 
                 {return "steelblue"}
                 else {return "grey"}
                 ;})
-        console.log("case 2");
     }
     if (investigator !== "all investigators" & species === "all species") {
         d3.selectAll("circle")
-            .style("fill-opacity", 1)
-            .style("fill", "steelblue")
+            .style("fill-opacity", 0)
+            .transition()
+            .duration(1000)
             .style('fill-opacity', function(d, i) { 
                 if (d.investigator === investigator) 
                 {return 1}
-                else {return 0.3}
+                else {return 0}
                 ;})
             .style('fill', function(d, i) { 
                 if (d.investigator === investigator) 
                 {return "steelblue"}
                 else {return "grey"}
                 ;})
-        console.log("case 3");
     }
     if (investigator !== "all investigators" & species !== "all species") {
         d3.selectAll("circle")
-            .style("fill-opacity", 1)
-            .style("fill", "steelblue")
+            .style("fill-opacity", 0)
+            .transition()
+            .duration(1000)
             .style('fill-opacity', function(d, i) { 
                 if (d.investigator === investigator & d.species === species) 
                 {return 1}
-                else {return 0.3}
+                else {return 0}
                 ;})
             .style('fill', function(d, i) { 
-            if (d.investigator === investigator & d.species === species) 
+                if (d.investigator === investigator & d.species === species) 
                 {return "steelblue"}
                 else {return "grey"}
                 ;})
-        console.log("case 4");
-}
+    }
 };
 
 // MAP
@@ -108,7 +130,7 @@ var drawClimate = function(code) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var climfile = './data/clim/' + code.toLowerCase() + '.csv';
-    
+
     d3.csv(climfile, type, function(error, data) {
         x.domain(data.map(function(d) { return d.month; }));
         y1.domain([0, d3.max(data, function(d) { return d.prec; })]);
@@ -170,8 +192,8 @@ var drawClimate = function(code) {
 var drawDendroclim = function(code) {
 
     var margin = {top: 20, right: 20, bottom: 20, left: 30},
-        width = 430 - margin.left - margin.right,
-        height = 200;
+    width = 430 - margin.left - margin.right,
+    height = 200;
 
     var x = d3.scale.ordinal()
         .rangeRoundBands([0, width], .2);
@@ -202,7 +224,7 @@ var drawDendroclim = function(code) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var respfile = './data/resp/' + code.toLowerCase() + '.csv';
-    
+
     d3.csv(respfile, type, function(error, data) {
         x.domain(data.map(function(d) { return d.month; }));
         var allprec = data.map(function(d) { return d.prec; });
@@ -210,7 +232,7 @@ var drawDendroclim = function(code) {
         var allcoef = allprec.concat(alltemp);
         y1.domain(d3.extent(allcoef));
         y2.domain(d3.extent(allcoef));
-            
+
         svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
@@ -260,10 +282,10 @@ var drawChrono = function(code) {
     var margin = {top: 20, right: 20, bottom: 20, left: 30},
     width =  800 - margin.left - margin.right,
     height = 200 - margin.top - margin.bottom;
-    
+
     var parseDate = d3.time.format("%Y").parse,
-        bisectDate = d3.bisector(function(d) { return d.year; }).left,
-        formatInfo = function(d) { return d.rawyear; };
+    bisectDate = d3.bisector(function(d) { return d.year; }).left,
+    formatInfo = function(d) { return d.rawyear; };
 
     var x = d3.time.scale()
         .range([0, width]);
@@ -312,7 +334,7 @@ var drawChrono = function(code) {
             .attr("class", "y axis")
             .call(yAxis)
             .append("text")
-            // .attr("transform", "rotate(-90)")
+        // .attr("transform", "rotate(-90)")
             .attr("y", 5)
             .attr("dy", "-1em")
             .attr("dx", "1em")
@@ -327,7 +349,7 @@ var drawChrono = function(code) {
         var focus = svg.append("g")
             .attr("class", "focus")
             .style("display", "none");
-        
+
         focus.append("circle")
             .attr("r", 4.5);
 
@@ -342,16 +364,16 @@ var drawChrono = function(code) {
             .on("mouseover", function() { focus.style("display", null); })
             .on("mouseout", function() { focus.style("display", "none"); })
             .on("mousemove", mousemove);
-        
+
         function mousemove() {
             var x0 = x.invert(d3.mouse(this)[0]),
-                i = bisectDate(data, x0, 1),
-                d0 = data[i - 1],
-                d1 = data[i],
-                d = x0 - d0.year > d1.year - x0 ? d1 : d0;
+            i = bisectDate(data, x0, 1),
+            d0 = data[i - 1],
+            d1 = data[i],
+            d = x0 - d0.year > d1.year - x0 ? d1 : d0;
             focus.attr("transform", "translate(" + x(d.year) + "," + y(d.rwi) + ")");
             focus.select("text").text(formatInfo(d));
-  }
+        }
     });
 };
 
@@ -389,23 +411,30 @@ d3.json("./data/world_statesus2.json", function(error, topology) {
             .attr("cy", function(d) {
                 return projection([d.lon, d.lat])[1];
             })
-            .style('fill', 'steelblue')
+            .style("fill-opacity", 0)
             .style("cursor", "pointer")
             .on("click", function(d) {
-                d3.select("#itrdbinfo").html('ITRDB-Code: ' + d.code + '<br>Study site: ' + d.studysite + '<br>Species: ' + d.species + '<br>Investigator: ' + d.investigator + '<br><a href=' + d.url + ' alt="Link to original data base entry" target="_blank">&rarr; get data</a>')
-                d3.selectAll("circle").style("fill", "steelblue")
-                d3.select(this).style("fill", "red")
+                d3.select("#itrdbinfo").html('ITRDB-Code: ' + d.code + '<br>Study site: ' + d.studysite + '<br>Species: ' + d.species + '<br>Investigator: ' + d.investigator + '<br><a href = "javascript:void(0)" onclick = "document.getElementById(\'light\').style.display=\'block\';document.getElementById(\'fade\').style.display=\'block\'">&rarr; get data</a>')
+                d3.selectAll("circle")
+                    .style("fill", "steelblue")
+                d3.select(this)
+                    .style("fill", "red")
                 d3.select("#chronograph").html("<span class=\"chartinfo\">Chronology</span>")
                 d3.select("#climateinfo").html("<span class=\"chartinfo\">Climate</span>")
                 d3.select("#dendroclim").html("<span class=\"chartinfo\">Dendroclimatology</span>")
                 drawChrono(d.code)
                 drawClimate(d.code)
                 drawDendroclim(d.code)
+                setDownload(d.code, d.studysite, d.species, d.investigator, d.url)
             })
-            .append("svg:title")
-            .text(function(d) {
-                return d.studysite;
-            });
+            .transition()
+            .duration(1000)
+            .style("fill-opacity", 1)
+            .style('fill', 'steelblue')
+            // .append("svg:title")
+            // .text(function(d) {
+            //     return d.studysite;
+            // });
     });
 
     var states = topojson.object(topology, topology.objects.states);
