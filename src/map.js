@@ -91,18 +91,18 @@ function changeSelection() {
 
 var drawClimate = function(code) {
 
-    var margin = {top: 20, right: 40, bottom: 20, left: 30},
+    var margin = {top: 10, right: 40, bottom: 20, left: 30},
     width = 350 - margin.left - margin.right,
-    height = 200;
+    height = 210;
 
     var x = d3.scale.ordinal()
         .rangeRoundBands([0, width], .2);
 
     var y1 = d3.scale.linear()
-        .range([height, 0]);
+        .range([height, 40]);
 
     var y2 = d3.scale.linear()
-        .range([height, 0]);
+        .range([height, 40]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -112,7 +112,6 @@ var drawClimate = function(code) {
     var yAxisLeft = d3.svg.axis()
         .scale(y1)
         .orient("left");
-
 
     var yAxisRight = d3.svg.axis()
         .scale(y2)
@@ -146,7 +145,7 @@ var drawClimate = function(code) {
             .call(yAxisLeft)
             .append("text")
             .attr("y", 6)
-            .attr("dy", "-1.2em")
+            .attr("dy", "28px")
             .attr("dx", "1.2em")
             .style("text-anchor", "end")
             .text("mm");
@@ -157,7 +156,7 @@ var drawClimate = function(code) {
             .call(yAxisRight)
             .append("text")
             .attr("y", 6)
-            .attr("dy", "-1.2em")
+            .attr("dy", "28px")
             .attr("dx", "1.2em")
             .style("text-anchor", "end")
             .text("°C");
@@ -185,6 +184,22 @@ var drawClimate = function(code) {
         return d;
     }
 
+    svg.append('line')
+        .attr({x1: 150, y1: 7, x2: 165, y2: 7, 'stroke': 'red', 'stroke-width': 3});
+
+    svg.append('rect')
+        .attr({x: 60, y: 0, width: 13, height: 13, 'fill': 'steelblue'});
+    
+    svg.append('text')
+        .text("Temperature")
+        .attr({x: 170, y: 10, 'text-anchor' : 'start'})
+        .style({'font-size': '10px'});
+
+    svg.append('text')
+        .text("Precipitation")
+        .attr({x: 78, y: 10, 'text-anchor' : 'start'})
+        .style({'font-size': '10px'});
+
 };
 
 // DRAW RESPONSE
@@ -199,10 +214,10 @@ var drawDendroclim = function(code) {
         .rangeRoundBands([0, width], .2);
 
     var y1 = d3.scale.linear()
-        .range([height, 0]);
+        .range([height, 40]);
 
     var y2 = d3.scale.linear()
-        .range([height, 0]);
+        .range([height, 40]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -243,7 +258,7 @@ var drawDendroclim = function(code) {
             .call(yAxis)
             .append("text")
             .attr("y", 6)
-            .attr("dy", "-1.2em")
+            .attr("dy", "28px")
             .attr("dx", "1.2em")
             .style("text-anchor", "end")
             .text("Coef");
@@ -273,6 +288,23 @@ var drawDendroclim = function(code) {
         d.prec = +d.prec;
         return d;
     }
+
+    svg.append('line')
+        .attr({x1: 190, y1: 7, x2: 205, y2: 7, 'stroke': 'red', 'stroke-width': 3});
+
+    svg.append('rect')
+        .attr({x: 100, y: 0, width: 13, height: 13, 'fill': 'steelblue'});
+    
+    svg.append('text')
+        .text("Temperature")
+        .attr({x: 210, y: 10, 'text-anchor' : 'start'})
+        .style({'font-size': '10px'});
+
+    svg.append('text')
+        .text("Precipitation")
+        .attr({x: 118, y: 10, 'text-anchor' : 'start'})
+        .style({'font-size': '10px'});
+    
 };
 
 // DRAW CHRONOLOGY
@@ -420,8 +452,8 @@ d3.json("./data/world_statesus2.json", function(error, topology) {
                 d3.select(this)
                     .style("fill", "red")
                 d3.select("#chronograph").html("<span class=\"chartinfo\">Chronology</span>")
-                d3.select("#climateinfo").html("<span class=\"chartinfo\">Climate</span>")
-                d3.select("#dendroclim").html("<span class=\"chartinfo\">Dendroclimatology</span>")
+                d3.select("#climateinfo").html('<span class="chartinfo">Climate</span>')
+                d3.select("#dendroclim").html("<span class=\"chartinfo\">Climate-growth relationships</span>")
                 drawChrono(d.code)
                 drawClimate(d.code)
                 drawDendroclim(d.code)
