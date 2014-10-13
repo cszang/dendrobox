@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Dendrobox</title>
+    <link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="vendor/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="vendor/topojson.v0.min.js" charset="utf-8"></script>
+  </head>
+
+  <div id="ptitle">
+    <img src="./img/douglass_2.jpg" width = "60px">
+    <a class="title" href="index.html">Dendrobox</a>
+  </div>
+  <div id="nav">
+    <a href="about.html" alt="about this project">What is this?</a>
+  </div>
+  
+  <div id="content">
+
+    <div id="itrdbmap" class="map"></div>
+
+    <div id="selectmenu" class="selector">
+
+      show&nbsp;
+
+      <select id="specselect" onchange="changeSelection();" class="selector">
+        <option label"all species" selected>all species</option>
+        <option value='ABSP'>Abies spec.</option>
+        <option value='ABAL'>Abies alba</option>
+        <option value='ABAM'>Abies amabilis</option>
+        <option value='ABBA'>Abies balsamea</option>
+        <option value='ABBO'>Abies borisii-regis</option>
+        <option value='ABCE'>Abies cephalonica</option>
+        <option value='ABCI'>Abies cilicica</option>
+        <option value='ABCO'>Abies concolor</option>
+        <option value='ABFO'>Abies forestii</option>
+        <option value='ABLA'>Abies lasiocarpa</option>
+        <option value='ABMA'>Abies magnifica</option>
+        <option value='ABNO'>Abies nordmanniana</option>
+        <option value='ABPI'>Abies pindrow</option>
+        <option value='ABPN'>Abies pinsapo</option>
+        <option value='ABPR'>Abies procera</option>
+        <option value='ABSB'>Abies spectabilis</option>
+        <option value='ACRU'>Acer rubrum</option>
+        <option value='ACSH'>Acer saccharum</option>
+        <option value='ADHO'>Adesmia horrida</option>
+        <option value='ADUS'>Adesmia uspallatensis</option>
+        <option value='AGAU'>Agathis australis</option>
+        <option value='ARAR'>Araucaria araucana</option>
+        <option value='ATCU'>Athrotaxis cupressoides</option>
+        <option value='ATSE'>Athrotaxis selaginoides</option>
+        <option value='AUCH'>Austrocedrus chilensis</option>
+        <option value='BEPU'>Betula pubescens</option>
+        <option value='CARO'>Callitris robusta</option>
+        <option value='CADE'>Calocedrus decurrens</option>
+        <option value='CABU'>Canthium burttii</option>
+        <option value='CADN'>Castanea dentata</option>
+        <option value='CASA'>Castanea sativa</option>
+        <option value='CESP'>Cedrela spec.</option>
+        <option value='CEAN'>Cedrela angustifolia</option>
+        <option value='CDAT'>Cedrus atlantica</option>
+        <option value='CDBR'>Cedrus brevifolia</option>
+        <option value='CDDE'>Cedrus deodara</option>
+        <option value='CDLI'>Cedrus libani</option>
+        <option value='CHNO'>Chamaecyparis nootkatensis</option>
+        <option value='CHOB'>Chamaecyparis obtusa</option>
+        <option value='CMJA'>Cryptomeria japonica</option>
+        <option value='DABI'>Dacrydium biforme</option>
+        <option value='DACO'>Dacrydium colensoi</option>
+        <option value='FAGR'>Fagus grandifolia</option>
+        <option value='FASY'>Fagus sylvatica</option>
+        <option value='FICU'>Fitzroya cupressoides</option>
+        <option value='FREX'>Fraxinus excelsior</option>
+        <option value='FRNI'>Fraxinus nigra</option>
+        <option value='JGAU'>Juglans australis</option>
+        <option value='JUSP'>Juniperus spec.</option>
+        <option value='JUEX'>Juniperus excelsa</option>
+        <option value='JUOC'>Juniperus occidentalis</option>
+        <option value='JUPH'>Juniperus phoenicea</option>
+        <option value='JUPR'>Juniperus przewalskii</option>
+        <option value='JURE'>Juniperus recurva</option>
+        <option value='JUSC'>Juniperus scopulorum</option>
+        <option value='JUTU'>Juniperus turkestanica</option>
+        <option value='JUVI'>Juniperus virginiana</option>
+        <option value='LGFR'>Lagarostrobus franklinii</option>
+        <option value='LADE'>Larix decidua</option>
+        <option value='LAGM'>Larix gmelinii</option>
+        <option value='LAGR'>Larix griffithiana</option>
+        <option value='LALA'>Larix laricina</option>
+        <option value='LALY'>Larix lyalli</option>
+        <option value='LAOC'>Larix occidentalis</option>
+        <option value='LASI'>Larix sibirica</option>
+        <option value='LIBI'>Libocedrus bidwillii</option>
+        <option value='LITU'>Liriodendron tulipifera</option>
+        <option value='NOBE'>Nothofagus betuloides</option>
+        <option value='NOGU'>Nothofagus gunnii</option>
+        <option value='NOME'>Nothofagus menziesii</option>
+        <option value='NOPU'>Nothofagus pumilio</option>
+        <option value='NOSO'>Nothofagus solandri</option>
+        <option value='PHAL'>Phyllocladus alpinus</option>
+        <option value='PHAS'>Phyllocladus aspleniifolius</option>
+        <option value='PHGL'>Phyllocladus glaucus</option>
+        <option value='PHTR'>Phyllocladus trichomanoides</option>
+        <option value='PCSP'>Picea spec.</option>
+        <option value='PCAB'>Picea abies</option>
+        <option value='PCEN'>Picea engelmannii</option>
+        <option value='PCGL'>Picea glauca</option>
+        <option value='PCGN'>Picea glehnii</option>
+        <option value='PCLI'>Picea likiangensis</option>
+        <option value='PCMA'>Picea mariana</option>
+        <option value='PCOM'>Picea omorika</option>
+        <option value='PCOR'>Picea orientalis</option>
+        <option value='PCRU'>Picea rubens</option>
+        <option value='PCSH'>Picea shrenkiana</option>
+        <option value='PCSI'>Picea sitchensis</option>
+        <option value='PCSM'>Picea smithiana</option>
+        <option value='PCTI'>Picea tienschanica</option>
+        <option value='PLUV'>Pilgerodendron uviferum</option>
+        <option value='PISP'>Pinus spec.</option>
+        <option value='PIAL'>Pinus albicaulis</option>
+        <option value='PIAR'>Pinus aristata</option>
+        <option value='PIAM'>Pinus armandii</option>
+        <option value='PIBA'>Pinus balfouriana</option>
+        <option value='PIBN'>Pinus banksiana</option>
+        <option value='PIBR'>Pinus brutia</option>
+        <option value='PICE'>Pinus cembra</option>
+        <option value='PICM'>Pinus cembroides</option>
+        <option value='PICO'>Pinus contorta</option>
+        <option value='PICL'>Pinus coulteri</option>
+        <option value='PIDE'>Pinus densiflora</option>
+        <option value='PIEC'>Pinus echinata</option>
+        <option value='PIED'>Pinus edulis</option>
+        <option value='PIFL'>Pinus flexilis</option>
+        <option value='PIHA'>Pinus halepensis</option>
+        <option value='PIJE'>Pinus jeffreyi</option>
+        <option value='PIKE'>Pinus kesiya</option>
+        <option value='PIKO'>Pinus koraiensis</option>
+        <option value='PILA'>Pinus lambertiana</option>
+        <option value='PILE'>Pinus leucodermis</option>
+        <option value='PILO'>Pinus longaeva</option>
+        <option value='PIMK'>Pinus merkusii</option>
+        <option value='PIMO'>Pinus monophylla</option>
+        <option value='PIMZ'>Pinus montezumae</option>
+        <option value='PIMU'>Pinus mughus</option>
+        <option value='PINI'>Pinus nigra</option>
+        <option value='PIPA'>Pinus palustris</option>
+        <option value='PIPE'>Pinus peuce</option>
+        <option value='PIPI'>Pinus pinaster</option>
+        <option value='PIPN'>Pinus pinea</option>
+        <option value='PIPO'>Pinus ponderosa</option>
+        <option value='PIRE'>Pinus resinosa</option>
+        <option value='PIRI'>Pinus rigida</option>
+        <option value='PIRO'>Pinus roxburghii</option>
+        <option value='PISI'>Pinus sibirica</option>
+        <option value='PISF'>Pinus strobiformis</option>
+        <option value='PIST'>Pinus strobus</option>
+        <option value='PISY'>Pinus sylvestris</option>
+        <option value='PITA'>Pinus taeda</option>
+        <option value='PITO'>Pinus torreyana</option>
+        <option value='PIUN'>Pinus uncinata</option>
+        <option value='PIWA'>Pinus wallichiana</option>
+        <option value='PPSP'>Populus spec.</option>
+        <option value='PPDE'>Populus deltoides</option>
+        <option value='PPGR'>Populus grandidentata</option>
+        <option value='PSMA'>Pseudotsuga macrocarpa</option>
+        <option value='PSME'>Pseudotsuga menziesii</option>
+        <option value='PTAN'>Pterocarpus angolensis</option>
+        <option value='QUSP'>Quercus spec.</option>
+        <option value='QUAL'>Quercus alba</option>
+        <option value='QUCA'>Quercus canariensis</option>
+        <option value='QUDG'>Quercus douglasii</option>
+        <option value='QUFG'>Quercus faginea</option>
+        <option value='QUFR'>Quercus frainetto</option>
+        <option value='QUHA'>Quercus hartwissiana</option>
+        <option value='QUKE'>Quercus kelloggii</option>
+        <option value='QULO'>Quercus lobata</option>
+        <option value='QULY'>Quercus lyrata</option>
+        <option value='QUMA'>Quercus macrocarpa</option>
+        <option value='QUMC'>Quercus macrolepis</option>
+        <option value='QUMO'>Quercus mongolica</option>
+        <option value='QUPE'>Quercus petraea</option>
+        <option value='QUPR'>Quercus prinus</option>
+        <option value='QURO'>Quercus robur</option>
+        <option value='QURU'>Quercus rubra</option>
+        <option value='QUST'>Quercus stellata</option>
+        <option value='QUVE'>Quercus velutina</option>
+        <option value='SALA'>Salix lanata</option>
+        <option value='TABA'>Tabebuia barbata</option>
+        <option value='TADI'>Taxodium distichum</option>
+        <option value='TAMU'>Taxodium mucronatum</option>
+        <option value='TABA'>Taxus baccata</option>
+        <option value='TEGR'>Tectona grandis</option>
+        <option value='THOC'>Thuja occidentalis</option>
+        <option value='THPL'>Thuja plicata</option>
+        <option value='TSCA'>Tsuga canadensis</option>
+        <option value='TSCR'>Tsuga caroliniana</option>
+        <option value='TSDU'>Tsuga dumosa</option>
+        <option value='TSHE'>Tsuga heterophylla</option>
+        <option value='TSME'>Tsuga mertensiana</option>
+        <option value='ULSP'>Ulmus spec.</option>
+        <option value='VIKE'>Vitex keniensis</option>
+        <option value='WICE'>Widdringtonia cedarbergensis</option>
+      </select>
+
+      &nbsp;contributed by&nbsp;
+      
+      <select id="resselect" onchange="changeSelection();" class="selector">
+        <option value="all investigators" selected>all investigators</option>
+        <option value='ADAMS, H.S.'>Adams, H.S.</option>
+        <option value='ADAMS, R.K.'>Adams, R.K.</option>
+        <option value='ALLA, A.'>Alla, A.</option>
+        <option value='ANDREASON, T.'>Andreason, T.</option>
+        <option value='ARCHAMBAULT, S.'>Archambault, S.</option>
+        <option value='ASTON, P.F.'>Aston, P.F.</option>
+        <option value='AXELSON, T.'>Axelson, T.</option>
+        <option value='BAILLIE, M.G.L.'>Baillie, M.G.L.</option>
+        <option value='BAREFOOT, A.C.'>Barefoot, A.C.</option>
+        <option value='BARTHOLOMAY, G.A.'>Bartholomay, G.A.</option>
+        <option value='BECKER, B.'>Becker, B.</option>
+        <option value='BEDNARZ, Z.'>Bednarz, Z.</option>
+        <option value='BEKKER, M.F.'>Bekker, M.F.</option>
+        <option value='BELL, R.'>Bell, R.</option>
+        <option value='BERIAULT, A.'>Beriault, A.</option>
+        <option value='BERT, G.D.'>Bert, G.D.</option>
+        <option value='BIGLER, C.'>Bigler, C.</option>
+        <option value='BILLAMBOZ, A.'>Billamboz, A.</option>
+        <option value='BIONDI, F.'>Biondi, F.</option>
+        <option value='BONINSEGNA, J.A.'>Boninsegna, J.A.</option>
+        <option value='BORGAONKAR, H.P.'>Borgaonkar, H.P.</option>
+        <option value='BOSWIJK, G.'>Boswijk, G.</option>
+        <option value='BRADFIELD, R.M.'>Bradfield, R.M.</option>
+        <option value='BREHME, K.'>Brehme, K.</option>
+        <option value='BRIFFA, K.'>Briffa, K.</option>
+        <option value='BRIONGOS, J.M.'>Briongos, J.M.</option>
+        <option value='BROWN, D.M.'>Brown, D.M.</option>
+        <option value='BROWN, P.M.'>Brown, P.M.</option>
+        <option value='BRUBAKER, L.B.'>Brubaker, L.B.</option>
+        <option value='BUCKLEY, B.'>Buckley, B.</option>
+        <option value='BUCKLEY, B.M.'>Buckley, B.M.</option>
+        <option value='BUNN, A.'>Bunn, A.</option>
+        <option value='CARROLL, A.L.'>Carroll, A.L.</option>
+        <option value='CHBOUKI, N.'>Chbouki, N.</option>
+        <option value='CHERUBINI, P.'>Cherubini, P.</option>
+        <option value='CHURCH, M.'>Church, M.</option>
+        <option value='CLEAVELAND, M.K.'>Cleaveland, M.K.</option>
+        <option value='COLENUTT, M.'>Colenutt, M.</option>
+        <option value='CONKEY, L.E.'>Conkey, L.E.</option>
+        <option value='CONRAD, L.'>Conrad, L.</option>
+        <option value='COOK, E.R.'>Cook, E.R.</option>
+        <option value='CROPPER, J.P.'>Cropper, J.P.</option>
+        <option value='CUFAR, K.'>Cufar, K.</option>
+        <option value='DAGNEAU, C.'>Dagneau, C.</option>
+        <option value='DAVI, N.'>Davi, N.</option>
+        <option value='DEAN, J.S.'>Dean, J.S.</option>
+        <option value='DENNIS, J.'>Dennis, J.</option>
+        <option value='DOBRY, J.'>Dobry, J.</option>
+        <option value='DOUGHERTY, P.'>Dougherty, P.</option>
+        <option value='DOUGLAS, A.V.'>Douglas, A.V.</option>
+        <option value='DOUGLAS, D.L.'>Douglas, D.L.</option>
+        <option value='DRUCKENBROD, D.'>Druckenbrod, D.</option>
+        <option value='DUNWIDDIE, P.W.'>Dunwiddie, P.W.</option>
+        <option value='DUVICK, D.N.'>Duvick, D.N.</option>
+        <option value='EARLE, C.J.'>Earle, C.J.</option>
+        <option value='ECKSTEIN, D.'>Eckstein, D.</option>
+        <option value='ERONEN, M.'>Eronen, M.</option>
+        <option value='ESPER, J.'>Esper, J.</option>
+        <option value='ESTES, E.T.'>Estes, E.T.</option>
+        <option value='FALK, D.'>Falk, D.</option>
+        <option value='FELIKSIK, E.'>Feliksik, E.</option>
+        <option value='FERGUSON, C.W.'>Ferguson, C.W.</option>
+        <option value='FLYNT, W.A.'>Flynt, W.A.</option>
+        <option value='FONTI, P.'>Fonti, P.</option>
+        <option value='FORBES, B.C.'>Forbes, B.C.</option>
+        <option value='FRITTS, H.C.'>Fritts, H.C.</option>
+        <option value='GERVAIS, B.'>Gervais, B.</option>
+        <option value='GIERTZ, V.'>Giertz, V.</option>
+        <option value='GRAUMLICH, L.J.'>Graumlich, L.J.</option>
+        <option value='GRAY, S.T.'>Gray, S.T.</option>
+        <option value='GRAYBILL, D.A.'>Graybill, D.A.</option>
+        <option value='GRIGGS, C.'>Griggs, C.</option>
+        <option value='GROW, D.'>Grow, D.</option>
+        <option value='GUYETTE, R.P.'>Guyette, R.P.</option>
+        <option value='HAGER, A.E.S.'>Hager, A.E.S.</option>
+        <option value='HARLAN, T.P.'>Harlan, T.P.</option>
+        <option value='HARSHA, J.B.'>Harsha, J.B.</option>
+        <option value='HENOCK, W.E.S.'>Henock, W.E.S.</option>
+        <option value='HEYERDAHL, E.K.'>Heyerdahl, E.K.</option>
+        <option value='HILAM, J.'>Hilam, J.</option>
+        <option value='HILL, J.F.'>Hill, J.F.</option>
+        <option value='HOFFSUMMER, P.'>Hoffsummer, P.</option>
+        <option value='HOLMES, R.L.'>Holmes, R.L.</option>
+        <option value='HOOGESTEGER, J.'>Hoogesteger, J.</option>
+        <option value='HUESKEN, W.'>Huesken, W.</option>
+        <option value='HUGHES, M.K.'>Hughes, M.K.</option>
+        <option value='IMRIE, G.'>Imrie, G.</option>
+        <option value='JACKSON, J.M.'>Jackson, J.M.</option>
+        <option value='JACOBY, G.C.'>Jacoby, G.C.</option>
+        <option value='JANSMA, E.'>Jansma, E.</option>
+        <option value='JANSSEN, S.'>Janssen, S.</option>
+        <option value='JOERGENSON, J.'>Joergenson, J.</option>
+        <option value='KAISER, K.'>Kaiser, K.</option>
+        <option value='KEEGAN, J.'>Keegan, J.</option>
+        <option value='KIENAST, F.'>Kienast, F.</option>
+        <option value='KING, J.C.'>King, J.C.</option>
+        <option value='KIRCHHEFER, A.J.'>Kirchhefer, A.J.</option>
+        <option value='KNAPP, P.A.'>Knapp, P.A.</option>
+        <option value='KNOWLES, T.'>Knowles, T.</option>
+        <option value='KOJO, Y.'>Kojo, Y.</option>
+        <option value='KOLCHIN, B.A.'>Kolchin, B.A.</option>
+        <option value='KOOP, D.L.'>Koop, D.L.</option>
+        <option value='KRAUSE, C.'>Krause, C.</option>
+        <option value='KRUSIC, P.J.'>Krusic, P.J.</option>
+        <option value='KUNIHOLM, P.I.'>Kuniholm, P.I.</option>
+        <option value='KUSH, J.'>Kush, J.</option>
+        <option value='KYNCL, J.'>Kyncl, J.</option>
+        <option value='LAMARCHE, V.C.'>Lamarche, V.C.</option>
+        <option value='LAMBERT, G.'>Lambert, G.</option>
+        <option value='LANDERS, R.'>Landers, R.</option>
+        <option value='LARSEN, C.'>Larsen, C.</option>
+        <option value='LARSSON, L.'>Larsson, L.</option>
+        <option value='LAWRENCE, D.M.'>Lawrence, D.M.</option>
+        <option value='LAZZARINI, G.'>Lazzarini, G.</option>
+        <option value='LEVANIC, T.'>Levanic, T.</option>
+        <option value='LI, J.'>Li, J.</option>
+        <option value='LINDERHOLM, H.'>Linderholm, H.</option>
+        <option value='LITTELL, J.S.'>Littell, J.S.</option>
+        <option value='LLOYD, A.H.'>Lloyd, A.H.</option>
+        <option value='LOOMANS, S.'>Loomans, S.</option>
+        <option value='MACDONALD, G.M.'>Macdonald, G.M.</option>
+        <option value='MAESSEN, P.P.'>Maessen, P.P.</option>
+        <option value='MCCLENAHEN, J.R.'>Mcclenahen, J.R.</option>
+        <option value='MCCORMICK, D.'>Mccormick, D.</option>
+        <option value='MEIJER, F.'>Meijer, F.</option>
+        <option value='MEKO, D.'>Meko, D.</option>
+        <option value='MEKO, D.M.'>Meko, D.M.</option>
+        <option value='MELVIN, T.M.'>Melvin, T.M.</option>
+        <option value='MERILAINEN, J.'>Merilainen, J.</option>
+        <option value='MILES, D.W.H.'>Miles, D.W.H.</option>
+        <option value='MORGAN, R.'>Morgan, R.</option>
+        <option value='MUSHOVE, P.'>Mushove, P.</option>
+        <option value='NAYLOR, T.H.'>Naylor, T.H.</option>
+        <option value='NOLA, P.'>Nola, P.</option>
+        <option value='NORTON, D.A.'>Norton, D.A.</option>
+        <option value='ORI, G.G.'>Ori, G.G.</option>
+        <option value='ORTEGREN, J.T.'>Ortegren, J.T.</option>
+        <option value='PACHOLEK, P.'>Pacholek, P.</option>
+        <option value='PALMER, J.G.'>Palmer, J.G.</option>
+        <option value='PANT, G.B.'>Pant, G.B.</option>
+        <option value='PARISH, R.'>Parish, R.</option>
+        <option value='PARK, W.'>Park, W.</option>
+        <option value='PARKER, M.L.'>Parker, M.L.</option>
+        <option value='PARKS, J.A.'>Parks, J.A.</option>
+        <option value='PEDERSON, G.T.'>Pederson, G.T.</option>
+        <option value='PEDERSON, N.'>Pederson, N.</option>
+        <option value='PERKINS, D.L.'>Perkins, D.L.</option>
+        <option value='PETERSON, D.L.'>Peterson, D.L.</option>
+        <option value='PETERSON, D.W.'>Peterson, D.W.</option>
+        <option value='PETRUCCI, A.'>Petrucci, A.</option>
+        <option value='PHIPPS, R.L.'>Phipps, R.L.</option>
+        <option value='PIKSRYTE, R.'>Piksryte, R.</option>
+        <option value='PILCHER, J.R.'>Pilcher, J.R.</option>
+        <option value='PUCKETT, L.J.'>Puckett, L.J.</option>
+        <option value='RATCLIFF, P.'>Ratcliff, P.</option>
+        <option value='RICHES, N.'>Riches, N.</option>
+        <option value='RICHTER, K.'>Richter, K.</option>
+        <option value='ROBINSON, W.J.'>Robinson, W.J.</option>
+        <option value='ROIG, F.'>Roig, F.</option>
+        <option value='RUBINO, D.L.'>Rubino, D.L.</option>
+        <option value='RYERSON, D.E.'>Ryerson, D.E.</option>
+        <option value='SCHMIDT, B.'>Schmidt, B.</option>
+        <option value='SCHULMAN, E.'>Schulman, E.</option>
+        <option value='SCHWEINGRUBER, F.H.'>Schweingruber, F.H.</option>
+        <option value='SHEPPARD, P.'>Sheppard, P.</option>
+        <option value='SHIYATOV, S.G.'>Shiyatov, S.G.</option>
+        <option value='SICCAMA, T.G.'>Siccama, T.G.</option>
+        <option value='SMITH, D.J.'>Smith, D.J.</option>
+        <option value='SPEER, J.H.'>Speer, J.H.</option>
+        <option value='STAHLE, D.W.'>Stahle, D.W.</option>
+        <option value='STAMBAUGH, M.C.'>Stambaugh, M.C.</option>
+        <option value='STOCKTON, C.W.'>Stockton, C.W.</option>
+        <option value='STOKES, M.A.'>Stokes, M.A.</option>
+        <option value='STRUMIA, G.'>Strumia, G.</option>
+        <option value='SWETNAM, T.W.'>Swetnam, T.W.</option>
+        <option value='SZEICZ, J.M.'>Szeicz, J.M.</option>
+        <option value='SZYMURA, T.'>Szymura, T.</option>
+        <option value='THOMPSON, M.A.'>Thompson, M.A.</option>
+        <option value='THOMSON, K.'>Thomson, K.</option>
+        <option value='TOSH, R.'>Tosh, R.</option>
+        <option value='TOUCHAN, R.'>Touchan, R.</option>
+        <option value='TREYDTE, K.'>Treydte, K.</option>
+        <option value='VILLALBA, R.'>Villalba, R.</option>
+        <option value='VITAS, A.'>Vitas, A.</option>
+        <option value='WAGGONER, L.'>Waggoner, L.</option>
+        <option value='WAZNY, T.'>Wazny, T.</option>
+        <option value='WENDLAND, W.'>Wendland, W.</option>
+        <option value='WHITE, L.O.'>White, L.O.</option>
+        <option value='WICKMAN, B.E.'>Wickman, B.E.</option>
+        <option value='WILES, G.'>Wiles, G.</option>
+        <option value='WILMKING, M.'>Wilmking, M.</option>
+        <option value='WILSON, R.'>Wilson, R.</option>
+        <option value='WILSON, R.J.S.'>Wilson, R.J.S.</option>
+        <option value='WISE, E.K.'>Wise, E.K.</option>
+        <option value='WOLF, J.J.'>Wolf, J.J.</option>
+        <option value='WOODHOUSE, C.A.'>Woodhouse, C.A.</option>
+        <option value='WRIGHT, W.'>Wright, W.</option>
+        <option value='WU, X.D.'>Wu, X.D.</option>
+        <option value='WYSE, T.C.'>Wyse, T.C.</option>
+        <option value='XIONG, L.'>Xiong, L.</option>
+        <option value='YAMAGUCHI, D.K.'>Yamaguchi, D.K.</option>
+        <option value='YOUNG, C.E.'>Young, C.E.</option>
+        <option value='YOUNG, J.'>Young, J.</option>
+        <option value='ZHANG, Q.'>Zhang, Q.</option>
+        <option value='ZU, R.Z.'>Zu, R.Z.</option>
+        <option value='ZUBER, R.'>Zuber, R.</option>
+        <option value='ZUNDE, M.'>Zunde, M.</option>
+      </select>
+
+      &nbsp;<button type="button" onclick="refresh();">refresh</button> 
+      
+    </div>
+    <div id="light" class="white_content"></div>
+    <div id="fade" class="white_overlay"></div>
+
+    <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
+    <div id="chronograph" class="chrono"></div>
+    <div id="climateinfo" class="climate"></div>
+    <div id="dendroclim" class="dendroclim"></div>
+    <script src="./src/map.js"></script>
+    
+    <div id="footer">
+      Made with <span class="heart">&hearts;</span>
+      by <a href="http://czang.org">czang</a>.  View project
+      on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+    </div>
+  </div>
+</html>
