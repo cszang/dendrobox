@@ -1,0 +1,2 @@
+This directory holds all the code and data necessary to download and
+compile the data used for displaying in Dendrobox.
