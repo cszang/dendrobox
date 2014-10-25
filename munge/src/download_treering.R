@@ -18,16 +18,19 @@ continents <- c("africa",
 
 zip_files_crn <- paste("itrdb", version, continents,
                        "crn.zip", sep = "-")
-zip_files_crn <- paste("itrdb", version, continents,
+zip_files_rwl <- paste("itrdb", version, continents,
                        "rwl.zip", sep = "-")
+
+dir.create("data/crn")
+dir.create("data/rwl")
 
 n <- length(continents)
 
 for (i in 1:n) {
   download.file(paste(base_path_crn, zip_files_crn[i], sep = ""),
                 file.path("data", "crn", zip_files_crn[i]))
-  unzip(file.path("data", "crn", zip_files[i]), exdir = "data/crn")
+  unzip(file.path("data", "crn", zip_files_crn[i]), exdir = "data/crn")
   download.file(paste(base_path_rwl, zip_files_rwl[i], sep = ""),
-                file.path("data", "rwl", zip_files_rwö[i]))
-  unzip(file.path("data", "rwl", zip_files[i]), exdir = "data/rwl")
+                file.path("data", "rwl", zip_files_rwl[i]))
+  unzip(file.path("data", "rwl", zip_files_rwl[i]), exdir = "data/rwl")
 }
