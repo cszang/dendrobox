@@ -8,22 +8,24 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top:10px;
+    background: #B5D0D0;
+    color: #294B4B;
 }
 
 h1 {
-    color: #FF3100;
+    color: #294B4B;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
 
 a {
-    color: black;
+    color: #538A8A;
     text-decoration: none;
-    border-bottom: 1px dotted #FF3100;
+    border-bottom: 1px dotted #294B4B;
 }
 
 a:hover {
-     border-bottom: 1px solid #FF3100;
+     border-bottom: 1px solid #294B4B;
 }
 
 div#ptitle {
@@ -56,7 +58,9 @@ div#content {
 }
 
 div#itrdbmap {
-    border: 1px dotted #FF3100;
+    border: 1px dotted #B5D0D0;
+    width: 800px;
+    height: 500px;
 }
 
 div#itrdbinfo {
@@ -77,7 +81,7 @@ div#selectmenu {
 }
 
 button {
-    border: 1px dotted #FF3100;
+    border: 1px dotted #B5D0D0;
     background: white;
     position: absolute;
     left: 700px;
@@ -107,7 +111,7 @@ div#dendroclim {
 }
 
 a.title {
-    color: #FF3100;
+    color: #538A8A;
     font-family: 'Pacifico', cursive;
     font-size: 4em;
     text-decoration: none;
@@ -121,13 +125,13 @@ span.subtitle {
 }
 
 span.dtext {
-    color: #FF3100;
+    color: #538A8A;
     font-family: 'Pacifico', sans-serif;
     font-size: 1.0em;
 }
 
 span.chartinfo {
-    color: #FF3100;
+    color: #294B4B;
     font-family: 'Pacifico', sans-serif;
     font-size: 1.8em;
 }
