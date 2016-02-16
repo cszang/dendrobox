@@ -1,36 +1,40 @@
-## download treering data from ITRDB's ftp servers
+# get treering data from NOAA archives; we work with the zip-files
+# for now (even though the individual folders might be more up-to-date)
 
-version <- "v705"                       # data version on FTP server
+countries <- c("africa", "asia", "australia", "canada", "europe",
+              "mexico", "southamerica", "usa")
+              
+dir.create("data/itrdb/chronos", recursive = TRUE)
+dir.create("data/itrdb/measure")
 
-base_path_crn <-
-  "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/treering/chronologies/"
-base_path_rwl <-
-  "ftp://ftp.ncdc.noaa.gov/pub/data/paleo/treering/measurements/"
+# chronologies
 
-continents <- c("africa",
-                "asia",
-                "australia",
-                "canada",
-                "europe",
-                "mexico",
-                "southamerica",
-                "usa")
+zips <-
+  paste0("ftp://ftp.ncdc.noaa.gov/pub/data/paleo/treering/chronologies/itrdb-v705-",
+         countries,
+         "-crn.zip"
+         )
 
-zip_files_crn <- paste("itrdb", version, continents,
-                       "crn.zip", sep = "-")
-zip_files_rwl <- paste("itrdb", version, continents,
-                       "rwl.zip", sep = "-")
+local_fn <-
+  paste0("data/itrdb/chronos/", countries, ".zip")
 
-dir.create("data/crn")
-dir.create("data/rwl")
+mapply(function(x, y) download.file(url = x, destfile = y),
+       zips, local_fn)
 
-n <- length(continents)
+lapply(local_fn, function(x) unzip(x, exdir = "data/itrdb/chronos"))
 
-for (i in 1:n) {
-  download.file(paste(base_path_crn, zip_files_crn[i], sep = ""),
-                file.path("data", "crn", zip_files_crn[i]))
-  unzip(file.path("data", "crn", zip_files_crn[i]), exdir = "data/crn")
-  download.file(paste(base_path_rwl, zip_files_rwl[i], sep = ""),
-                file.path("data", "rwl", zip_files_rwl[i]))
-  unzip(file.path("data", "rwl", zip_files_rwl[i]), exdir = "data/rwl")
-}
+## get raw measurements
+
+zips <-
+  paste0("ftp://ftp.ncdc.noaa.gov/pub/data/paleo/treering/measurements/itrdb-v705-",
+         countries,
+         "-rwl.zip"
+         )
+
+local_fn <-
+  paste0("data/itrdb/measure/", countries, ".zip")
+
+mapply(function(x, y) download.file(url = x, destfile = y),
+       zips, local_fn)
+
+lapply(local_fn, function(x) unzip(x, exdir = "data/itrdb/measure"))
