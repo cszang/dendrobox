@@ -1,0 +1,806 @@
+CDI Code  Latin name and authority                      Common name
+-------------------------------------------------------------------------------------------------------
+    ABSP  Abies Mill. fir
+ 2  ABAL* Abies alba Mill.                              silver fir, European fir
+ 1  ABAM* Abies amabilis Dougl. ex Forbes               Pacific silver fir
+ 2  ABBA  Abies balsamea (L.) Mill.                     balsam fir
+ 1  ABBO* Abies borisii-regis Mattf.                    Bulgarian fir, King Boris fir
+ 0  ABBN  Abies bornmuelleriana Mattf.                  Bornmueller's fir
+ 0  ABBR  Abies bracteata (D.Don) Nutt.                 bristlecone fir
+ 1  ABCE* Abies cephalonica Loud.                       Greek fir
+ 0  ABCH  Abies chensiensis van Tiegh                   Chensien fir
+ 1  ABCI  Abies cilicica (Ant. & Kotschy) Carr.         Cilician fir
+ 2  ABCO* Abies concolor (Gord. & Glend.)
+          Lindl. ex Hildebr.                            white fir
+ 0  ABEQ  Abies equi-trojani Aschers. & Sint.
+          Abies ernestii Rehd. =
+          Abies recurvata var. ernestii (Rehd.) Kuan
+ 0  ABFX  Abies faxoniana Rehd. & Wils.                 Faxon fir
+ 0  ABFI  Abies firma Sieb. & Zucc.                     Japanese fir, Momi fir
+ 1  ABFO  Abies forestii Rogers                         Chinese fir
+ 1  ABFR  Abies fraseri (Pursh) Poir.                   Fraser fir
+ 1  ABGR  Abies grandis (Dougl. ex D. Don) Lindl.       grand fir, giant fir
+ 0  ABHO  Abies holophylla Maxim.                       Manchurian fir
+ 1  ABKA  Abies kawakamii (Hayata) Ito                  Taiwan fir
+ 1  ABKO  Abies koreana Wils.                           Korean fir
+ 2  ABLA* Abies lasiocarpa (Hook.) Nutt.                subalpine fir, corkbark fir
+ 1  ABMA* Abies magnifica A. Murr.                      California red fir
+ 1  ABMR  Abies mariessi Mast.                          Marie's fir
+ 1  ABMC  Abies marocana Trabut                         Moroccan fir
+ 0  ABNB  Abies nebrodensis (Lojac.) Mattei             Sicilian fir
+ 0  ABNE  Abies nephrolepis Maxim.                      East Siberian fir
+ 1  ABNO* Abies nordmanniana (Stev.) Spach              Caucasian fir
+ 1  ABNU  Abies numidica De Lannoy ex. Carr.            Algerian fir
+ 1  ABPI* Abies pindrow (Royle) Spach                   Himalayan silver fir, West Himalayan fir
+ 1  ABPN* Abies pinsapo Boiss.                          Spanish fir
+ 1  ABPR* Abies procera Rehd.                           noble fir
+ 1  ABRC  Abies recurvata Mast.                         Min fir
+ 0  ABRE  Abies religiosa Schlecht.                     Mexican fir, sacred fir
+ 0  ABSA  Abies sachalinensis (Schmidt) Mast.           Sachalin fir, todo
+ 0  ABSI  Abies sibirica Ledeb.                         Siberian fir
+ 1  ABSB* Abies spectabilis (D. Don) Spach              silver fir, East Himalayan fir
+ 0  ABSQ  Abies squamata Mast.                          flaky fir
+ 0  ABVI  Abies vietchii Lindl.                         Vietch's silver fir
+ 0  ACAL  Acacia alpina F.Muell.
+ 0  ACCA  Acacia catechu Willd.                         cutch, Indian acacia
+ 0  ACGI  Acacia giraffae Willd.                        camel thorn
+ 0  ACHO  Acacia hotwittii
+ 0  ACME  Acacia melanoxylon R.Br.                      blackwood
+ 0  ACNI  Acacia nilotica (L.) Willd. ex Delile         gum arabic tree
+ 0  ACRA  Acacia raddiana Savia                         Israelian acacia
+    ACSP  Acer L.                                       maple
+ 1  ACCA  Acer campestre L.                             hedge maple, field maple
+ 0  ACNE  Acer negundo L.                               boxelder, ash-leaved maple
+ 0  ACMO  Acer mono Maxim.                              maple
+ 1  ACOP  Acer opalus Mill.                             Italian maple
+ 0  ACPE  Acer pensylvanicum L.                         striped maple
+ 1  ACPL  Acer platanoides L.                           Norway maple
+ 1  ACPS  Acer pseudoplatanus L.                        sycamore maple, plane tree
+ 1  ACRU  Acer rubrum L.                                red maple
+ 0  ACSA* Acer saccharinum L.                           silver maple
+ 2  ACSH* Acer saccharum Marsh.                         sugar maple
+ 0  ACSC  Acer spicatum Lam.                            mountain maple
+ 0  ACTU  Acer turkestanica Pax
+ 0  ADDI  Adansonia digitata L.                         baobab, monkey bread tree
+ 0  ADFA  Adenostoma fasciculatum Hook. & Arn.          chamise, greasewood
+ 1  ADHO* Adesmia horrida Gill.
+ 1  ADUS* Adesmia uspallatensis Gill.
+ 0  AEHI  Aesculus hippocastanum L.                     horse chestnut
+ 0  AEPU  Aextoxicon punctatum R. & Pav.                olivillo, tique
+ 0  AFAF  Afzelia africana Smith                        afzelia, apa, doussie, alinga, papao
+ 0  AFQU  Afzelia quanzensis Welw.                      afzelia, mambokofi, chanfuta, mbembakofi
+ 2  AGAU* Agathis australis (D.Don) Lindley             kauri pine
+ 0  AGMA  Agathis macrophylla                           Fijian kauri
+ 0  AGMO  Agathis moorei Mast.                          kauri
+ 0  AGOV  Agathis ovata Warb.                           kauri
+ 0  AGPA  Agathis palmerstoni F.v.M.                    North Queensland kauri, Australian agathis
+ 2  AGRO  Agathis robusta (C. Moore ex F. Muell) Bailey kauri pine, Queensland kauri
+ 0  AGVI  Agathis vitiensis (Seeman)
+          Benth. & Hook.f. ex Drake                     Fiji kauri, dakua
+ 0  AIAL  Ailanthus altissima (Mill.) Swingle           Tree of Heaven
+ 0  ALVE  Allocasuarina verticillata (Lam.)
+          L.A.S. Johnson
+    ALSP  Alnus Mill.                                   alder
+          Alnus crispa = 
+          Alnus viridis var. crispa (Ait.) Turrill      green alder
+ 1  ALGL  Alnus glutinosa (L.) Gaertn.                  common alder, European alder, black alder
+ 0  ALHI  Alnus hirsuta (Spach.) Rupr.
+ 1  ALIN  Alnus incana (L.) Moench                      grey alder, white alder
+ 0  ALMA  Alnus maximowiczii Callier
+ 0  ALRH  Alnus rhombifolia Nutt.                       white alder
+ 0  ALRU  Alnus rubra Bong.                             red alder
+ 0  ALRG  Alnus rugosa (Du Roi) Spreng.                 speckled alder, rough alder
+ 0  ALSE  Alnus serrulata (Ait.) Willd.                 hazel alder
+ 0  ALSI  Alnus sinuata (Regel.) Rydb.                  Sitka alder
+ 1  ALVI  Alnus viridis (Chaix) DC. in Lam. & DC.       green alder
+ 0  ALCR  Alnus viridis var. crispa (Ait.) Turrill      American green alder
+ 1  AMSP  Amelanchier Medik.                            serviceberry
+ 0  AMOV  Amelanchier ovalis M.
+ 0  AMLU  Amomyrtus luma (Mol.) Legr. & Kaus.           luma
+ 0  ANCO  Andira coriacea Pulle                         Saint Martin rouge
+ 1  ANSP  Annona spraguei ARSP Araucaria A.L. Juss.     araucaria
+ 1  ARAN  Araucaria angustifolia (Bertol.) Kuntze       Parana araucaria, Parana pine, candelabra tree
+ 2  ARAR* Araucaria araucana (Molina) K. Koch           monkey puzzle, araucaria, pehuen, Chile pine
+ 0  ARBI  Araucaria bidwilli Hook.                      bunya pine, bunya
+ 0  ARCU  Araucaria cunninghamii Aiton ex D. Don        hoop pine, Moreton bay pine, colonial pine
+ 0  ARHE  Araucaria heterophylla (Salisb.) Franco       Norfolk Island pine
+ 0  ARHU  Araucaria hunsteinii Klinki                   pine
+ 0  ARGL  Arctostaphylos glauca Lindl.                  bigberry manzanita
+ 1  ARTR  Artemisia tridentata Nutt.                    big sagebrush
+ 2  ATCU* Athrotaxis cupressoides D. Don                pencil pine, smooth Tasmanian cedar
+ 2  ATSE* Athrotaxis selaginoides D. Don                King Billy pine
+ 0  AUKL  Aucoumea klaineana Pierre                     okoume
+ 2  AUCH* Austrocedrus chilensis (D. Don)               Chilean cedar, cipres de la cordillera,
+          Florin & Boutelje                             Chilean incense cedar
+ 0  BAAE  Balanites aegyptiaca Del.                     Jericho balsam, heglig
+ 0  BLTA  Beilschmiedia tawa (A. Cunn.)                 Kirk tawa
+ 0  BBVU  Berberis vulgaria L.                          common barberry
+ 0  BTEX  Bertholletia excelsa H.B.K.                   Brazil nut, yuvia, turury, para nut tree
+    BESP  Betula L.                                     birch
+          Betula alaskana Sarg. = Betula 
+          papyrifera var. neoalaskana (Sarg.) Raup      Alaska paper birch
+          Betula alba L. = Betula pubescens Ehrh.       common white birch
+ 0  BEAB  Betula albosinensis Burk.                     Chinese birch
+ 1  BEAL  Betula alleghaniensis Britton                 yellow birch
+          Betula carpatica Walldst. & Kit. ex Willd. = 
+          Betula pubescens var. carpatica (Willd.)
+          Ascherson & Graebner                          Carpathian birch
+ 0  BEER  Betula ermanii Cham.                          Japanese birch, dakekaba
+ 0  BEGL  Betula glandulosa Michx.                      bog birch, dwarf birch
+ 1  BEGR  Betula grossa Sieb. & Zucc.                   Japanese cherry birch
+ 0  BELE  Betula lenta L.                               sweet birch, black birch
+ 0  BENI  Betula nigra L.                               river birch
+ 1  BEPA  Betula papyrifera Marsh.                      paper birch
+ 0  BEAK  Betula papyrifera var. 
+          neoalaskana (Sarg.) Raup                      Alaska paper birch
+ 1  BEPE  Betula pendula Roth = Betula verrucosa Ehrl.  silver birch, European white birch
+ 0  BEPL  Betula platyphylla Suk.                       jagjag-namu, Japanese birch
+ 0  BEPO  Betula populifolia Marsh.                     gray birch
+ 1  BEPU  Betula pubescens Ehrh.                        downy birch, mountain birch, white birch
+ 1  BEUT  Betula utilis D.Don                           Himalayan birch
+ 1  BEVE  Betula verrucosa Ehrl.                        silver birch, European white birch
+ 0  BOQU  Bombacopsis quinata (Jaqu.) Dugand
+ 0  BOMA  Bombax malabaricum DC.                        semul, ngiu, ngiew, gon run do
+ 1  BUGR  Bursera graveolens (Kunth) Triana & Planch.   palo santo
+ 0  BUSI  Bursera simaruba (L.) Sarg.                   gumbo-limbo, West-Indian birch
+ 1  BUSE  Buxus sempervirens L.                         common box, boxwood
+    CASP  Callitris Ventenat
+ 0  CACO  Callitris columellaris F. Muell.              cypress pine
+ 0  CAIN  Callitris intratropica Baker & Smith          cypress pine
+ 0  CAMA  Callitris macleayana (F. Muell.) F. Muell     brush cypress pine
+ 1  CAPR* Callitris preissii Miq.                       Rottnest Island pine
+ 1  CARO* Callitris robusta R. Br. ex Bailey = 
+          Callitris preissii Miq.                       Rottnest Island pine
+ 1  CADE  Calocedrus decurrens (Torr.) Florin           California incense cedar
+ 1  CABU  Canthium burttii                              canthium 
+          Capparis angulata Ruiz & Pav. ex DC. = 
+          Capparis scabrida Kunth                       sapote
+ 0  CASC  Capparis scabrida Kunth                       sapote
+ 0  CAPC  Carapa procera C.DC.                          carapa
+ 0  CPBE  Carpinus betulus L.                           hornbeam
+    CYSP  Carya Nutt.                                   hickory
+ 0  CYCO  Carya cordoformis (Wangenh.) K. Koch          bitternut hickory
+ 1  CYGL  Carya glabra (Mill.) Sweet                    pignut hickory
+ 1  CYIL  Carya illinoensis (Wagenh.) K. Koch           pecan
+ 0  CYOV  Carya ovata (Mill.) K. Koch                   shagbark hickory
+ 0  CYTO  Carya tomentosa (Poir.) Nutt.                 mockernut hickory
+ 0  CAGL  Caryocar glabrum Aubl.                        chawari
+ 0  CACR  Castanea crenata Sieb. & Zucc.                Japanese chestnut
+ 1  CADN  Castanea dentata (Marsh.) Borkh.              American chestnut
+ 1  CASA  Castanea sativa Mill.                         sweet chestnut, European chestnut
+ 0  CSLI  Casuarina litoralis Salisb.                   black she-oak
+          Casuarina verticillata Lam. = 
+          Allocasuarina verticillata (Lam.) L.A.S. Johnson
+ 0  CTSP  Catalpa speciosa Warder ex Engelm.            northern catalpa
+ 0  CNCR  Ceanothus crassifolius Torr.                  hoaryleaf ceanothus
+    CESP  Cedrela P.Br.                                 cedrela
+ 1  CEAN* Cedrela angustifolia Sesse & Mocino ex DC.    cedro salteno
+          Cedrela balansae C. DC. = 
+          Cedrela angustifolia Sesse & Mocino
+ 0  CEFI  Cedrela fissilis Vell.                        central American cedar, cigarbox cedar
+ 1  CELI* Cedrela lilloi C. DC.                         cedro salteno
+ 0  CEOD  Cedrela odorata L.
+ 0  CETO  Cedrela toona Roxb. ex. Rottler =             Harms red cedar, Australian cedar,
+          Toona australis (F. Muell.)                   toon, yomhom
+    CDSP  Cedrus Trew                                   cedar
+ 2  CDAT  Cedrus atlantica (Endl.) Manetti              Atlantic cedar, Atlas cedar
+ 1  CDBR* Cedrus brevifolia Henry = 
+          Cedrus libani var. brevifolia                 Cyprian cedar
+ 1  CDDE  Cedrus deodara (D. Don) G. Don                deodar cedar, Himalayan cedar
+ 1  CDLI* Cedrus libani A. Richard                      Cedar of Lebanon
+    CLSP  Celtis L.                                     hackberry
+ 1  CLAU  Celtis australis L.                           southern nettle tree, hackberry
+ 0  CLCA  Celtis caucasica Willd.                       Caucasian nettle tree
+ 0  CLLA  Celtis laevigata Willd.                       sugarberry
+ 1  CLOC  Celtis occidentalis L.                        hackberry
+ 1  CLRE  Celtis reticulata Torr.                       netleaf hackberry
+ 0  CEOC  Cephalanthus occidentalis L.                  buttonbush
+ 0  CEMI  Cercidium microphyllum (Torr.) Rose & Johnst. yellow paloverde
+    CRSP  Cercocarpus Kunth                             cercocarpus
+ 0  CRBE  Cercocarpus betuloides Nutt.                  birchleaf mountain-mahogany
+ 0  CRLE  Cercocarpus ledifolius Nutt.                  curlleaf mountain-mahogany
+ 1  CRMO  Cercocarpus montanus Raf.                     alderleaf cercocarpus
+ 1  CHFO  Chamaecyparis formosensis Matsum.             Formosan false cypress, Taiwan red cypress
+ 2  CHNO  Chamaecyparis nootkatensis (D. Don) Spach     Alaska yellow-cedar, Nootka cypress
+ 1  CHOB  Chamaecyparis obtusa (Sieb. & Zucc.) Endl.    hinoki cypress, Formosan cypress
+ 1  CHPI  Chamaecyparis pisifera Sieb. & Zucc.          sawara cypress
+ 0  CHTH  Chamaecyparis thyoides (L.) B.S.P.            Atlantic white-cedar
+ 0  CLEX  Chlorophora excelsa Benth. & Hook.f.          iroko, kambala, mvule
+ 0  CHSP  Chorisia speciosa St. Hil.                    paneira
+ 0  CIFR  Citharexylum fruticosum L.                    Florida fiddlewood
+ 0  COCO  Copaifera coleosperma Benth.                  Rhodesian copalwood, mehibi
+    CONI                                                Various conifers
+ 1  COAL  Cordia alliodora Oken                         laurel corriente, lauro amarillo, ajo ajo
+ 0  COAP  Cordia apurensis Agostini
+ 0  COBI  Cordia bicolor A.DC.
+ 0  COEL  Cordia elaeagnoides DC.
+ 0  COTR  Cordia trichotoma Vell.                       lauro pardo, peterebi
+    COSP  Cornus L.                                     dogwood
+ 0  COFL  Cornus florida L.                             flowering dogwood
+ 0  COSA  Cornus sanguinea
+ 0  COAV  Corylus avellana L.                           common hazel
+ 0  COSI  Corylus sieboldiana                           blume hazel
+ 0  CTCO  Cotinus coggygria Scop.                       European smoketree
+ 0  CTSP  Cotoneaster Medik.                            cotoneaster
+ 0  CRAZ  Crataegus azarolus L.                         azarole
+ 0  CRMO  Crataegus monogyna
+ 2  CMJA* Cryptomeria japonica (L. f.) D. Don           Japanese cedar, sugi, cryptomeria
+ 1  CUAZ  Cupressus arizonica Greene                    Arizona cypress
+ 0  CUAT  Cupressus atlantica Gaussen                   Atlas cypress
+ 0  CUDU  Cupressus dupreziana Camus
+ 1  CUGI  Cupressus gigantea Cheng & L.K. Fu
+ 0  CUGL  Cupressus glabra Sudworth                     smooth Arizona cypress
+          Cupressus lindleyi Klotzsch. = 
+          Cupressus lusitanica Mill.
+ 0  CULU  Cupressus lusitanica Mill.                    Mexican cypress
+ 2  CUSE  Cupressus sempervirens L.                     Italian cypress, Mediterranean cypress
+ 0  CYRA  Cyrilla racemiflora L.                        swamp cyrilla, leatherwood
+ 0  DADA  Dacrycarpus dacrydioides (A. Rich.) Laubenf.  kahikatea, white pine
+ 1  DABD  Dacrydium bidwillii                           New Zealand mountain pine
+ 1  DABI* Dacrydium biforme (Hook.) Pilger = 
+          Halocarpus biformis Hook.                     pink pine
+ 1  DACO* Dacrydium colensoi Hook. = 
+          Lagarostrobos colensoi (Hook.) C.J.           silver pine
+ 2  DACU  Dacrydium cupressinum Lamb.                   rimu, red pine
+ 1  DAFR  Dacrydium franklinii Hook f.                  Huon pine
+ 0  DIGU  Dicorynia guianensis Amsh.                    angelique
+ 0  DSVI  Diospyros virginiana L.                       common persimmon
+ 0  DITO  Discaria toumatou Raoul                       matagouri, tumatu-kuru, wild Irishman
+ 1  DITR  Discaria trinervis Reiche.
+ 0  DRLA  Dracophyllum latifolium Cunn.                 neinei
+ 0  DRWI  Drimys winteri J.R. & G. Forst                canelo, winter bark
+ 1  DUVI  Duschenkia viridis Opiz = Betula ovata Schrank.
+ 0  DYMA  Dysoxylum malabaricum Bedd.                   Bombay white cedar, Indian white cedar
+ 0  ELGL  Elaeoluma glabrascens (C. Mart. & Eichler) Aubrév.
+ 1  EMRU  Empetrum rubrum Vahl ex. Willd.               murtilla
+ 1  ENCA  Enkianthus campanulatus (Miq.) Nichols
+ 0  ENAN  Entandrophragma angolense C.DC.               gedu nohor, kalungi, tiama, edinam
+ 0  ENCA  Entandrophragma candollei Harms               kosipo, omu, entandrophragma mahogany
+ 0  ENCY  Entandrophragma cylindricum Sprague           sapeli, sapele, sapelli, assi
+          Entandrophragma macrophyllum A. Chev. = 
+          Entandrophragma angolense C.DC.
+ 0  ENUT  Entandrophragma utile Sprague                 sipo, utile EPSP Ephedra L. ephedra
+ 0  EUCA  Eucalyptus camaldulensis Dehnh.               river red gum
+ 0  EUDE  Eucalyptus delegatensis R. Baker              alpine ash
+ 0  EUGL  Eucalyptus globulus Labill.                   Tasmanian bluegum
+ 0  EUMA  Eucalyptus marginata Donn. ex Sm.             jarrah
+ 0  EUMI  Eucalyptus miniata Cunn. ex Shauer            Darwin woolybutt
+ 0  EUNE  Eucalyptus nesophila Blakely                  Melville Island bloodwood
+ 0  EUOR  Eucalyptus oreades R.T. Baker                 Blue Mountains ash
+ 0  EUPA  Eucalyptus pauciflora Sieb.                   snow gum, cabbage gum
+ 0  EUST  Eucalyptus stellulata Sieb. ex DC             black salee
+ 0  EUTE  Eucalyptus tetradonta F. Muell.               Darwin stringybark
+ 0  EUVI  Eucalyptus viminalis Labill.                  ribbongum
+ 0  EUCO  Eucryphia cordifolia Cav.                     ulmo, muermo
+ 0  EUJA  Eugenia jambolana Lam.                        jaman, kelat eugenia
+ 0  EXCU  Exocarpus cuppressiforme Labill.              native cherry
+    FASP  Fagus L.                                      beech
+ 1  FAGR* Fagus grandifolia Ehrh.                       American beech
+ 1  FAOR  Fagus orientalis Lipsky                       Oriental beech, eastern beech
+ 2  FASY* Fagus sylvatica L.                            European beech, common beech
+    FCSP  Ficus L. fig
+ 2  FICU* Fitzroya cupressoides (Molina) Johnston       alerce, Patagonian cypress
+    FRSP  Fraxinus L.                                   ash
+ 1  FRAM  Fraxinus americana L.                         white ash
+ 0  FRCA  Fraxinus caroliniana Mill.                    Carolina ash
+ 0  FACR  Fagus crenata Blume                           bunya beech
+ 1  FREX* Fraxinus excelsior L.                         European ash, common ash
+ 0  FRMA  Fraxinus mandshurica Rupr.                    Manchurian ash, yachidamo
+ 1  FRNI* Fraxinus nigra Marsh.                         black ash
+ 0  FRPE  Fraxinus pennsylvanica Marsh.                 green ash, red ash
+ 1  FRSP  Fraxinus spaethiana Lingelsh.                 ash
+ 1  FRVE  Fraxinus velutina Torr.                       velvet ash
+ 0  GEAV  Gevuina avellana                              avellano
+ 0  GIBI  Gingko biloba L.                              maidenhair tree, gingko
+ 0  GLTR  Gleditsia triacanthos L.                      honey locust
+ 0  GMAR  Gmelina arborea Roxb.                         gumari, gumbar, yemane, gmelina, gamari
+ 0  GOLA  Gordonia lasianthus (L.) Ellis                loblolly-bay
+ 0  GOGL  Goupia glabra Aubl.                           goupia
+ 0  GRVI  Grevillea victoriae F. Muell.
+ 0  GUCE  Guarea cedrata Pellegr.                       bosse, guarea, white guarea, scented guarea
+ 0  HABD  Halocarpus bidwillii                          bog pine
+ 1  HABI* Halocarpus biformis (Hook.) Quinn             pink pine
+ 0  HAKI  Halocarpus kirkii                             manoao
+ 0  HAVI  Hamamelis virginiana L.                       witch hazel
+ 0  HEAN  Hedycaria angustifolia A. Cunn.               native mulberry
+ 0  HEAR  Heteromeles arbutifolia (Lindl.) M.J. Roem.   toyon
+ 1  HEBR  Hevea brasiliensis 
+          (Wild. ex Adr. de Juss.) Muell. Arg.          rubber tree
+ 0  ILAQ  Ilex aquifolium L.                            English holly
+ 0  ILCA  Ilex cassine L.                               dahoon, dahoon holly
+ 0  ILCO  Ilex coriacea (Pursh) Chapm.                  large gallberry, sweet gallberry
+ 0  ILGL  Ilex glabra (L.) Gray                         inkberry, gallberry
+ 0  ILIN  Ilex inundata Poepp. ex Reisseck
+ 0  ILOP  Ilex opaca Ait.                               American holly
+ 0  JACO  Jacaranda copaia D.Don                        copaia, gobaja, futui, caroba
+ 1  JGAU* Juglans australis Griseb.                     Argentine walnut
+ 0  JGCI  Juglans cinerea L.                            butternut
+ 0  JGNI  Juglans nigra L.                              black walnut
+ 0  JGRE  Juglans regia L.                              common walnut
+    JUSP  Juniperus L.                                  juniper
+ 0  JUCH  Juniperus chinensis L.                        Chinese juniper
+ 1  JUCO  Juniperus communis L.                         common juniper
+ 0  JUDE  Juniperus deppeana Steud.                     alligator juniper
+ 1  JUDR  Juniperus drupacea Labill.                    Syrian juniper
+ 1  JUEX  Juniperus excelsa Bieb.                       Greek juniper, Grecian juniper
+ 1  JUFO  Juniperus foetidissima Willd.                 stinking juniper
+          Juniperus indica = Juniperus semiglobosa Regel
+ 0  JUMA  Juniperus macropoda Boiss.                    Himalayan pencil pine
+ 0  JUMO  Juniperus monosperma (Emgelm.) Sarg.          one-seed juniper
+ 2  JUOC* Juniperus occidentalis Hook.                  western juniper
+ 1  JUOS  Juniperus osteosperma (Torr.) Little          Utah juniper
+ 1  JUOX  Juniperus oxycedrus L.                        prickly juniper
+          Juniperus palycarpos = Juniperus seravschanica Komar.
+ 1  JUPH  Juniperus phoenicea L.                        Phoenicean juniper
+ 0  JUPI  Juniperus pinchotii Sudw.                     redberry juniper, Pinchot juniper
+ 0  JUPC  Juniperus procera Hochst. ex Endl.            Uganda juniper, African pencil cedar,
+                                                        East African juniper
+ 1  JUPR  Juniperus przewalskii Kom.                    Qilianshan juniper
+ 1  JURE  Juniperus recurva Buch.-Ham. ex D. Don        drooping juniper
+ 2  JUSC* Juniperus scopulorum Sarg.                    Rocky Mountain juniper
+ 1  JUSM  Juniperus semiglobosa Regel
+ 1  JUSE  Juniperus seravschanica Komar.
+ 0  JUTH  Juniperus thurifera L.                        Spanish juniper
+ 1  JUTU  Juniperus turkestanica Komar.                 Turkestan juniper
+ 2  JUVI* Juniperus virginiana L.                       eastern red-cedar
+ 0  KHGR  Khaya grandifolia C.DC.                       acajou, Benin mahogany, African mahogany
+ 0  KRDR  Krenevaja drevesina
+ 0  KUER  Kunzea ericoides (A. Rich.) J. Thompson       kanuka, white tea tree
+ 0  LBGL  Labatia glomerata
+ 0  LBAN  Laburnum anagyroides Medik.                   common laburnum
+ 1  LGCO* Lagarostrobus colensoi (Hook.) C.J. Quinn = 
+          Dacrydium colensoi Hook.
+ 1  LGFR  Lagarostrobus franklinii C.J. Quinn           huon pine
+ 0  LSFL  Lagerstroemia flos-reginae Retz.              pyinma, banaba, banglang, jarul
+ 0  LSPA  Lagerstroemia parviflora Roxb.                lendia
+ 0  LSLA  Lagerstroemia lanceolata Wall.                benteak, nana
+    LASP  Larix Mill.                                   larch
+          Larix cajanderi Mayr = Larix gmelinii
+          Larix chinensis Beissn. = Larix potaninii Batal.
+          Larix dahurica Turcz. ex Trautv. = 
+          Larix gmelinii (Rupr.) Litvin.
+ 2  LADE* Larix decidua Mill.                           European larch
+ 1  LAGM* Larix gmelinii (Rupr.) Litvin.                Dahurian larch
+ 1  LAGR  Larix griffithiana (Lindl. & Gord.) Carr.     Himalayan larch
+ 1  LAJA  Larix japonica Carr.                          Japanese larch
+          Larix kaempferi (Lamb.) Carr. = Larix japonica Carr.
+          Larix kurilensis Mayr = 
+          Larix gmelinii var. japonica (Regel) Pilg.
+ 2  LALA* Larix laricina (Du Roi) K. Koch               tamarack, eastern larch
+          Larix leptolepis (Sieb. & Zucc.) Gordon =
+          Larix japonica Carr.
+ 2  LALY* Larix lyalli Parl.                            subalpine larch
+ 2  LAOC* Larix occidentalis Nutt.                      western larch
+ 1  LAPO  Larix potanini Batal.                         Chinese larch
+          Larix russica (Endl.) Sabine ex Trautv. = 
+          Larix sibirica Ledeb.
+ 2  LASI* Larix sibirica Ledeb.                         Siberian larch
+          Larix sukachevii Djil. = 
+          Larix sibirica Ledeb.                         Ural larch
+ 0  LAPH  Laurelia philippiana Looser                   tepa
+ 0  LASE  Laurelia sempervirens Tul.                    laurelia, Chilean laurel, huahuan
+ 0  LAHU  Laxopterigium huasango                        haltaco
+ 0  LECO  Lecythis corrugata Poit.                      angelique
+ 0  LEIN  Lepidothamnus intermedius (Kirk) Quinn        yellow-silver pine
+          Leptospermum ericoides = Kunzea ericoides
+ 0  LEFL  Leptospermum flavescens Sm.                   tea tree
+ 0  LESC  Leptospermum scoparium Forster & Forster f.   manuka, red tea tree, black manuka, red manuka
+    LISP  Libocedrus Endl. incense-cedar
+ 2  LIBI* Libocedrus bidwillii Hook. f.                 New Zealand cedar, pahautea, kaikawaka          
+          Libocedrus decurrens Torr. = 
+          Calocedrus decurrens (Torr.) Florin           incense-cedar
+ 0  LIPL  Libocedrus plumosa (D.Don) Sarg.              kawaka, plume incense cedar
+ 0  LGVU  Ligustrum vulgare L.
+ 1  LIST  Liquidambar styraciflua L.                    sweetgum
+ 1  LITU* Liriodendron tulipifera L.                    tuliptree, yellow-poplar, tulip-poplar
+ 0  LOFR  Lomatia fraseri R.Br.                         silky lomatia, tree lomatia
+ 0  LOHI  Lomatia hitsuta (Lam.) Diel ex. Macbr.        radal
+ 0  LOXY  Lonicera xylosteum L.
+ 0  LOTR  Lovoa trichilioides Harms                     dibetou
+ 0  MAAC  Magnolia accuminata L.                        cucumbertree
+ 0  MAGR  Magnolia grandiflora L.                       southern magnolia
+ 0  MAVI  Magnolia virginiana L.                        sweetbay, swampbay
+ 0  MASY  Malus sylvestris L.                           apple tree
+ 0  MABI  Manilkara bidentata A. Chev.                  balata franc
+ 0  MICH  Michelia champaca L.                          champak
+ 0  MINI  Michelia niligirica Zenker                    pilachampa, champak
+    MIX                                                 Various taxa
+ 0  MOCO  Moronobea coccinea Aubl.                      manil montagne, mountain manil
+ 0  MOAL  Morus alba L.                                 white mulberry
+ 0  MORU  Morus rubra L.                                red mulberry
+ 0  MYCE  Myrica cerifera L.                            southern bayberry, bayberry
+ 0  MYGA  Myrica gale L.                                sweet gale, bog myrtle
+ 0  NEAM  Nectandra amazonum
+ 0  NTLO  Notelaea longifolia Vent.                     large mock-olive
+ 0  NOAL  Nothofagus alpina (Poepp. & Endl.) Oerst.     rauli
+ 1  NOAN  Nothofagus antarctica (Forst) Oerst.          Antarctic beech, nirre
+ 1  NOBE* Nothofagus betuloides (Mirb.) Blume           coihue de Magallanes, guindo
+ 0  NOCU  Nothofagus cunninghamii Oerst.                Australian nothofagus, myrtle beech
+ 0  NODO  Nothofagus dombeyi (Mirb.) Blume              coihue, Dombey's southern beech
+ 0  NOFU  Nothofagus fusca (Hook. f.) Oerst.            red beech, New Zealand red beech
+ 1  NOGU* Nothofagus gunnii (Hook. f.) Oerst.           tanglefoot beech
+ 2  NOME* Nothofagus menziesii (Hook. f.) Oerst.        silver beech, Menzies's red beech
+ 0  NONE  Nothofagus nervosa Dim. et Mil.               rauli
+ 0  NONI  Nothofagus nitida Reiche                      roble chicote
+ 1  NOOB  Nothofagus obliqua (Mirb.) Blume              southern beech, roble
+ 1  NOPU* Nothofagus pumilio (Poepp. & Endl.) Oerst.    lenga
+ 2  NOSO* Nothofagus solandri (Hook. f.) Oerst.         mountain beech, black beech
+ 0  NYOG  Nyssa ogechee Bartr. ex Marsh.                Ogeechee tupelo
+ 0  NYSY  Nyssa sylvatica Marsh.                        black tupelo, blackgum
+ 0  OCUS  Ocotea usambarensis Engl.                     ocotea, camphor, East African camphorwood
+ 0  OSCA  Ostrya carpinifolia Scop.                     hop hornbeam
+ 0  OXAR  Oxydendrum arboreum (L.) DC                   sourwood
+ 0  PARI  Parapiptadenia rigida Benth.
+ 0  PAAU  Parkia auriculata
+ 0  PATO  Paulownia tomentosa (Thumb.) Steud.           empress tree
+ 0  PECA  Peronema canescens Jack.                      sunkai, koeroes
+ 0  PEBO  Persea borbonia (L.) Spreng.                  redbay, shorebay
+ 0  PELI  Persea lingue Nees                            lingue
+ 0  PELN  Petrophile linearis R.Br.                     pixie mops
+ 0  PBPO  Phoebe porfiria Mez.
+ 1  PHAL* Phyllocladus alpinus Hook. f.                 mountain toatoa, alpine celery top pine
+ 1  PHAS* Phyllocladus aspleniifolius 
+          (Labill.) Hook. f.                            celery top pine
+ 1  PHGL* Phyllocladus glaucus Carr.                    toatoa
+ 1  PHTR* Phyllocladus trichomanoides D. Don in Lamb.   tanekaha, celery pine
+    PCSP  Picea A. Dietr.                               spruce
+ 2  PCAB* Picea abies (L.) Karst.                       Norway spruce
+          Picea ajanensis Fisch. = Picea jezoensis (Sieb. & Zucc.) Carr.
+ 0  PCAS  Picea asperata Mast.                          dragon spruce
+ 1  PCBA  Picea balfouriana
+ 1  PCBR  Picea brachytyla (Franch.) Pritz.
+ 1  PCCA  Picea cajanensis Lindl. et Gord.
+ 1  PCCH  Picea chihuahuana Martinez                    chihuahua spruce
+          Picea crassifolia Komarov = Picea asperata Mast.
+ 2  PCEN* Picea engelmannii Parry ex Engelm.            Engelmann spruce
+          Picea excelsa (Lam.) Link = Picea abies (L.) Karst
+ 2  PCGL* Picea glauca (Moench) Voss                    white spruce
+ 1  PCGN  Picea glehnii (Fr. Schmidt) Mast.             Sakhalin spruce
+ 0  PCJE  Picea jezoensis (Sieb. & Zucc.) Carr.         Yezo spruce, Hondo spruce
+ 1  PCLI  Picea likiangensis (Franchet) Pritzel         Likiang spruce
+ 2  PCMA* Picea mariana (Mill.)
+          Britt., Sterns & Poggenb.                     black spruce
+          Picea obovata Ledeb. = 
+          Picea abies subsp. obovata (Ledeb.) Hultén    Siberian spruce
+ 1  PCOM* Picea omorika (Panc.) Purk.                   Serbian spruce, Pancic spruce
+ 1  PCOR* Picea orientalis (L.) Link                    eastern spruce, Oriental spruce
+ 2  PCPU* Picea pungens Engelm.                         blue spruce, Colorado spruce
+ 1  PCPR  Picea purpurea Mast.
+ 2  PCRU* Picea rubens Sarg.                            red spruce
+ 1  PCSH  Picea shrenkiana Fisch. & Meyer               Shrenk's spruce
+ 2  PCSI* Picea sitchensis (Bong.) Carr.                Sitka spruce
+ 1  PCSM  Picea smithiana (Wall.) Boiss.                Himalayan spruce
+ 1  PCTI  Picea tienschanica Rupr.                      Tien-shan spruce
+ 2  PLUV* Pilgerodendron uviferum (Pilger) Florin       cipres de las Guaytecas
+    PISP  Pinus L.                                      pine
+ 2  PIAL* Pinus albicaulis Engelm.                      whitebark pine
+ 2  PIAR* Pinus aristata Engelm. in Parry & Engelm.     Rocky Mountain bristlecone pine
+          Pinus aristata var. longaeva = Pinus longaeva D.K. Bailey
+ 1  PIAM* Pinus armandii Franchet                       David's pine, Armand's pine
+ 2  PIBA* Pinus balfouriana Grev. & Balf. in A. Murr.   foxtail pine
+ 2  PIBN* Pinus banksiana Lamb.                         jack pine
+ 1  PIBR* Pinus brutia Ten                              Calabrian pine, brutia pine, see kiefer
+ 0  PIBU  Pinus bungeana Zucc.                          lacebark pine
+ 0  PICN  Pinus canariensis Chr. Sm. ex DC              Canary Island pine
+ 0  PICA  Pinus caribaea Mor.                           Caribbean pine, Cuban pine
+ 2  PICE* Pinus cembra L.                               Swiss stone pine, Arolla pine
+ 2  PICM* Pinus cembroides Zucc.                        Mexican pinyon, Mexican nut pine
+ 1  PICH  Pinus chihuahuana Engelm.                     chihuahua pine
+ 2  PICO* Pinus contorta Dougl. ex Loud.                lodgepole pine
+ 0  PICL  Pinus coulteri D.Don                          Coulter pine, bigcone pine
+ 1  PIDN  Pinus densata (See note at bottom)
+ 1  PIDE* Pinus densiflora Sieb. & Zucc.                Japanese red pine
+ 2  PIEC* Pinus echinata Mill.                          shortleaf pine
+ 2  PIED* Pinus edulis Engelm. in Wisliz.               pinyon, Colorado pinyon
+ 1  PIEL  Pinus elliottii Engelm.                       slash pine
+ 1  PIEN  Pinus engelmannii Carr.                       Apache pine
+ 2  PIFL* Pinus flexilis James limber pine
+ 1  PIGE  Pinus gerardiana Wall. ex D. Don.             chilgoza pine, Gerard's pine
+ 2  PIHA* Pinus halepensis Mill.                        Aleppo pine, Jerusalem pine
+          Pinus hallii = Podocarpus hallii Kirk
+ 1  PIHE  Pinus heldreichii Christ                      Heldreich's pine, panzer fohre
+ 2  PIJE* Pinus jeffreyi Grev. & Balf. in A. Murr.      Jeffrey pine
+ 1  PIKE  Pinus kesiya Royle ex Gordon                  Khasi pine
+ 1  PIKO  Pinus koraiensis Sieb. & Zucc.                Korean pine
+ 1  PILG  Pinus lagunae M.-F. Passini                   laguna pinyon
+ 2  PILA* Pinus lambertiana Dougl.                      sugar pine
+          Pinus laricio Poir. = Pinus nigra Arnold
+          Pinus leiophylla var. chihuahuana (Engelm.) Shaw = 
+          Pinus chihuahuana chihuahua pine
+ 2  PILE* Pinus leucodermis Ant.                        Bosnian pine, greybark pine, pino loricato
+ 2  PILO* Pinus longaeva D.K. Bailey                    Intermountain bristlecone pine
+          Pinus longifolia Roxb. = Pinus roxburghii Sarg.
+ 1  PIMA  Pinus massoniana Lamb.                        Masson pine
+ 1  PIMK  Pinus merkusii Jungh. & De Vriese             Merkus pine, mindoro pine, Tenasserim pine
+ 1  PIME  Pinus mesogeensis Fieschi & Gaussen           cluster pine
+ 2  PIMO* Pinus monophylla Torr. & Frem. in Frem.       singleleaf pinyon
+          Pinus montana Mill. = Pinus mugo Turra
+ 1  PIMZ  Pinus montezumae Lamb.                        Montezuma pine
+ 1  PIMC  Pinus monticola Dougl. ex D. Don in Lamb.     western white pine
+ 1  PIMU* Pinus mughus Scop. = Pinus mugo Turra         krummholz pine
+ 1  PIMG  Pinus mugo Turra                              mountain pine, stone pine
+ 0  PIMR  Pinus muricata D.Don                          bishop pine
+ 2  PINI* Pinus nigra Arnold                            Austrian pine, black pine
+ 0  PIOC* Pinus occidentalis Swartz                     West Indian pine
+ 0  PIOO  Pinus oocarpa Schiede                         Nicaraguan pitch pine, ocote pine
+          Pinus pallasiana Lamb. = Pinus nigra Arnold
+ 1  PIPA* Pinus palustris Mill.                         longleaf pine
+ 0  PIPT  Pinus patula Schiede & Deppe                  Mexican weeping pine
+ 1  PIPE* Pinus peuce Griseb.                           Macedonian pine, Balkan pine
+ 1  PIPI* Pinus pinaster Ait.                           maritime pine, cluster pine
+ 2  PIPN* Pinus pinea L.                                Italian stone pine, umbrella pine
+ 2  PIPO* Pinus ponderosa Dougl. ex Laws.               ponderosa pine, western yellow pine
+ 1  PIPM  Pinus pumila (Pall.) Regel                    dwarf Siberian pine, Japanese stone pine
+ 1  PIPU* Pinus pungens Lamb.                           Table Mountain pine
+ 1  PIQU  Pinus quadrifolia Parl. ex Sudw.              Parry pinyon
+ 1  PIRA  Pinus radiata D. Don                          Monterrey pine
+ 2  PIRE* Pinus resinosa Ait.                           red pine
+ 1  PIRI* Pinus rigida Mill.                            pitch pine
+ 1  PIRO  Pinus roxburghii Sarg.                        chir pine
+ 1  PISI  Pinus sibirica Du Tour                        Siberian stone pine
+ 2  PISF* Pinus strobiformis Engelm.                    southwestern white pine
+ 2  PIST* Pinus strobus L.                              eastern white pine, Weymouth pine
+ 2  PISY* Pinus sylvestris L.                           Scots pine, Scotch pine
+ 1  PITB  Pinus tabulaeformis Carr.                     Chinese pine
+ 2  PITA* Pinus taeda L.                                loblolly pine
+ 0  PITH  Pinus thunbergii Parl.                        Japanese black pine
+ 1  PITO  Pinus torreyana Parry ex Carr.                Torrey pine
+ 2  PIUN  Pinus uncinata Mill. ex Mirb. in Buffon       mountain pine
+ 1  PIVI  Pinus virginiana Mill.                        Virginia pine, scrub pine
+ 1  PIWA  Pinus wallichiana A.B. Jackson                Himalayan pine, kail pine, blue pine
+ 0  PSGR  Pisonia grandis R.Br.
+    PTSP  Pistacia L.                                   pistache
+ 0  PTAT  Pistacia atlantica Desf.                      Atlas pistache, betoum
+ 0  PTKH  Pistacia khinjuk Stocks.                      kakkar
+ 0  PTPA  Pistacia palaestina Boiss.                    Israelian pistache
+ 0  PTVE  Pistacia vera L.                              green mastic, real mastictree
+ 0  PLAC  Platanus acerifolia (Ait.) Willd.             London plane tree
+ 1  PLOC  Platanus occidentalis L.                      American sycamore
+ 0  PLOR  Platanus orientalis L.                        Oriental plane tree
+ 0  PLIN  Platonia insignis Mart.                       parcouri
+ 1  PLOR  Platyeladus orientalis                        Chinese pine
+ 0  PYSA  Polyscias sambucifolius (Sieber ex DC.) Harms elderberry panax, elderberry ash
+    POSP  Podocarpus L'Heritier ex Persoon
+          Podocarpus dacrydioides = Dacrycarpus dacrydioides
+ 0  POFA  Podocarpus falcatus (Thumb.) Br.              yellowwood, oteniqua
+          Podocarpus ferrugineus = Prumnopitys ferruginea (D. Don) Laubenf.
+ 0  POHA  Podocarpus hallii Kirk                        Hall's totara
+ 0  POLA  Podocarpus lawrencei Hook. f.                 Tasmanian podocarpus
+ 1  PONE  Podocarpus neriifolius D.Don                  thitmin
+ 0  PONI  Podocarpus nivalis Hook.                      snow totara
+ 1  PONU  Podocarpus nubigensus Lindl. ex Paxt          manio de hojas punzantes, manio macho
+ 0  POPA  Podocarpus parlatorei Podocarpus spicatus = 
+          Prumnopitys taxifolia (D. Don) Laubenf.
+ 0  POTO  Podocarpus totara D. Don                      totara
+    PPSP  Populus L.                                    cottonwood, poplar
+ 1  PPAL  Populus alba L.                               white poplar
+ 0  PPAN  Populus angustifolia James                    narrowleaf cottonwood
+ 1  PPBA  Populus balsamifera L.                        balsam poplar
+ 0  PPDE  Populus deltoides Bartr. ex Marsh.            eastern cottonwood
+ 1  PPEU  Populus euphratica Oliv.                      charab poplar, Indian poplar
+ 0  PPFA  Populus fastigiata
+ 1  PPFR  Populus fremontii Wats.                       Fremont cottonwood
+ 1  PPGR  Populus grandidentata Michx.                  bigtooth aspen
+ 1  PPNI  Populus nigra L.                              lombardy poplar, black poplar
+ 1  PPSI  Populus sieboldii Miq.                        Japanese aspen
+ 1  PPTR  Populus tremuloides Michx.                    quaking aspen
+ 0  PPTC  Populus trichocarpa Torr. & Gray.             black cottonwood
+ 1  PRMX  Premna maxima T.C.E. Fries                    muchichio
+    PROS  Prosopis L.                                   mesquite
+ 1  PRFL  Prosopis flexuosa DC.
+ 0  PRGL  Prosopis glandulosa Torr.                     honey mesquite
+ 0  PMAN  Prumnopitys andina = Podocarpus andinus       lleuque
+ 0  PMFE  Prumnopitys ferruginea (D. Don) Laubenf.      miro
+ 0  PMTA  Prumnopitys taxifolia (D. Don) Laubenf.       matai, black pine
+ 0  PNAM  Prunus americana Marsh.                       American plum
+ 0  PNAV  Prunus avium L.                               wild cherry
+ 0  PNIL  Prunus ilicifolia (Nutt. ex 
+          Hook & Arn.) D. Dietr.                        hollyleaf cherry
+ 0  PNMA  Prunus mahaleb L.
+ 0  PNPE  Prunus pennsylvanica L.f.                     pin cherry
+ 1  PNSE  Prunus serotina Ehrh.                         black cherry
+ 0  PNSP  Prunus spinosa Ehrh.
+ 0  PSMU  Pseudobombax munguba Mart. & Zucc.            muguba, huira
+ 1  PSSE  Pseudobombax septenatum (Jacq.) Dugand
+ 1  PSJA  Pseudotsuga japonica (Shirasawa) Beissn.      Japanese Douglas-fir
+ 1  PSMA* Pseudotsuga macrocarpa (Vasey) Mayr           bigcone Douglas-fir
+ 2  PSME* Pseudotsuga menziesii (Mirb.) Franco          Douglas-fir
+ 0  PSAX  Pseudowintera axillaris 
+          (Forster & Forster f.) Dandy                  horopito
+ 0  PSCO  Pseudowintera colorata (Raoul) Dandy          mountain horopito, pepper tree
+ 0  PSXA  Pseudoxandra polyphleba (Diels) R.E. Fr.
+ 0  PTAN  Pterocarpus angolensis DC.                    muninga, mninga, brown African padauk
+ 0  PTVE  Pterocarpus vernalis Pittier
+ 0  PTRH  Pterocarya rhoifolia Sieb. & Zucc.            Japanese wing nut
+ 0  PTPA  Pteronia pallens DC.
+    PUSP  Purshia DC. ex Poir.
+ 1  PUTR  Purshia tridentata (Pursh) DC.                bitter brush
+    QUSP  Quercus L.                                    oak
+ 0  QUAC  Quercus acutissima Carruth.
+          Quercus aegilops L. = 
+          Quercus macrolepis Kotschy                    Valonia oak
+ 0  QUAF  Quercus afares Pomel
+ 2  QUAL* Quercus alba L.                               white oak
+ 0  QUBI  Quercus bicolor Willd.                        swamp white oak
+ 0  QUBO  Quercus boissieri Reut.                       Israelian oak
+ 1  QUBR  Quercus brantii Lindley
+ 0  QUCL  Quercus calliprinos Webb                      Kermes oak, Israelian oak
+ 1  QUCA  Quercus canariensis Willd.                    Mirbeck's oak, Algerian oak
+ 1  QUCE  Quercus cerris L.                             Turkey oak, Austrian oak
+ 1  QUCO  Quercus coccinea Muenchh.                     scarlet oak
+          Quercus conferta Kit. = Quercus frainetto Ten.
+ 0  QUCP  Quercus copeyensis
+ 0  QUCR  Quercus costaricensis
+ 1  QUDE  Quercus dentata Thunb.                        kashiwa oak, Daimio oak
+ 1  QUDG  Quercus douglasii Hook. and Arn.              blue oak
+ 1  QUDS  Quercus dschoruchensis K. Koch
+ 1  QUEL  Quercus ellipsoidalis E.J. Hill               northern pin oak
+ 0  QUEM  Quercus emoryi Torr. in Emory                 Emory oak
+ 0  QUEN  Quercus engelmannii Greene                    Engelmann oak
+ 1  QUFG  Quercus faginea Lam.                          Portuguese oak
+ 1  QUFA  Quercus falcata Michx.                        southern red oak
+ 1* QUFR  Quercus frainetto Ten.                        Hungarian oak
+ 2  QUGA  Quercus gambelii Nutt.                        Gambel oak
+ 0  QUGY  Quercus garryana Dougl. ex Hook               Oregon white oak
+ 1  QUGR  Quercus grisea Liebm.                         gray oak
+ 1  QUHA  Quercus hartwissiana Steven
+          Quercus humilis Mill. = Quercus lusitanica Lam.
+ 0  QUIL  Quercus ilex L.                               holm oak, holly oak
+ 0  QUIT  Quercus ithaburensis (Decne.) Boiss.          Mt. Tabor oak
+ 0  QUKE  Quercus kelloggii Newb.                       California black oak
+ 1  QULA  Quercus laurifolia Michx.                     laurel oak
+ 1  QULO  Quercus lobata Nee                            valley oak
+ 0  QULU  Quercus lusitanica Lam.                       oak
+ 1  QULY* Quercus lyrata Walt.                          overcup oak
+ 1  QUMA* Quercus macrocarpa Michx.                     bur oak
+ 0  QUMC  Quercus macrolepis Kotschy                    Valonia oak
+ 0  QUML  Quercus marilandica Muenchh.                  blackjack oak
+ 0  QUMI  Quercus michauxii Walt.                       swamp chestnut oak
+ 0  QUMO  Quercus mongolica Fisch. ex Turcz.            Mongolian oak
+ 0  QUGS  Quercus mongolica var. grosseserrata 
+          (Bulme) Rehd. & Wils.                         mizunara oak
+ 0  QUMU  Quercus muehlenbergii Engelm.                 chinkapin oak
+ 1  QUNI  Quercus nigra L.                              water oak
+          Quercus pagodaefolia (Ell.) Ashe = 
+          Quercus falcata var. pagodifolia Ell.
+ 0  QUPA  Quercus palustris Muenchh.                    pin oak
+          Quercus pedunculata Ehrl. = Quercus robur L.  English oak, pedunculate oak
+          Quercus persica Jaub. & Spach = Quercus brantii Lindley
+ 2  QUPE* Quercus petraea (Mattuschka) Liebl.           durmast oak, sessile oak
+ 1  QUPO  Quercus pontica K. Koch                       Armenian oak
+ 1  QUPR* Quercus prinus L.                             chestnut oak
+ 2  QUPU  Quercus pubescens Willd.                      downy oak, pubescent oak
+ 0  QUPY  Quercus pyrenaica Willd.                      Pyrenean oak
+ 2  QURO* Quercus robur L.                              English oak
+ 1  QURU* Quercus rubra L.                              red oak
+          Quercus serrata Sieb. & Zucc. = 
+          Quercus acutissima Carruth.
+          Quercus sessiliflora Salisb. = Quercus petraea (Mattuschka) Liebl.
+ 1  QUSH  Quercus shumardii Buckl.                      Shumard oak
+ 2  QUST* Quercus stellata Wangenh.                     post oak
+ 0  QUSU  Quercus suber L.                              cork oak, cork tree
+ 1  QUVE* Quercus velutina Lam.                         black oak
+ 0  QUAC  Quintinia acutifolia Kirk.                    Westland quintinia
+ 0  RAGU  Rapanea guianensis Aubl.                      guiana rapanea
+ 0  RESP  Recordoxylon speciosum Normand & Mariaux      wacapou guitin
+ 0  RHCA  Rhamnus caroliniana Walt.                     Carolina buckthorn
+ 0  RHCT  Rhamnus cathartica L.
+ 0  RHCR  Rhamnus crocea Nutt.                          hollyleaf buckthorn
+ 0  RHOV  Rhus ovata Wats.                              sugar sumac
+ 1  RONE  Robinia neomexicana Gray                      New Mexico locust
+ 0  ROPS  Robinia pseudoacacia L.                       black locust
+ 0  SBPI  Sabina pingu
+          Sabina przewalskii Kom. = Juniperus przewalskii Komarov
+ 0  SBRE  Sabina recurva
+ 1  SBSA  Sabina saltuaria
+ 1  SBTI  Sabina tibetica
+ 1  SBWA  Sabina wallichiana
+    SASP  Salix L.                                      willow
+ 0  SAAC  Salix acutifolia Willd.                       pointed-leaved willow
+ 1  SAAL  Salix alba L.                                 white willow
+ 0  SAAM  Salix amygdalina L.                           almond-leaved willow, peachleaf willow
+ 0  SAAD  Salix amygdaloides Anderss.                   peachleaf willow
+ 0  SAAR  Salix arbusculoides Anderss.                  littletree willow
+ 0  SAAT  Salix arctica Pall.                           Arctic willow
+ 0  SABA  Salix babylonica L.                           weeping willow
+ 0  SACN  Salix candida Fluegge                         sage-leaf willow, silver willow
+ 0  SACA  Salix caprea L.                               pussy willow, goat willow
+ 0  SACR  Salix caroliniana Michx.                      Coastal Plain willow
+ 0  SADI  Salix discolor Muhl.                          pussy willow, glaucous willow
+ 0  SAEL  Salix elaeagnos Scop.                         hoary willow
+ 0  SAEX  Salix exigua Nutt.                            sandbar willow
+ 0  SAGL  Salix glauca L.                               grayleaf willow
+          Salix interior Rowlee = Salix exigua Nutt.
+ 0  SALA  Salix lanata L.                               Richardson's willow
+ 0  SALS  Salix lasiolepis Benth.                       arroyo willow, white willow
+ 0  SAMY  Salix myrsinifolia Salisb.
+ 0  SAPH  Salix phylicifolia L.                         tea-leaf willow
+ 0  SAPL  Salix planifolia Pursh                        sandbar willow, lakeshore willow,
+                                                        diamondleaf willow
+ 0  SAPU  Salix purpurea L.                             purple willow, purple osier
+          Salix triandra L. = Salix amygdalina L.
+ 0  SAVI  Salix viminalis L.                            basket willow, common osier
+ 0  SNAL  Santalum album L.                             sandalwood, santalin, chandal
+ 0  SSAL  Sassafras albinum (Nutt.) Nees                sassafras
+ 0  SSAL  Sapium styllare Muell. Arg.
+ 1  SACO  Saxegothaea conspicua Lindl.                  Prince Albert's yew, manio de hojas cortas,
+                                                        manio hembra
+ 0  SCTR  Schleichera trijuga Willd.                    ta-kro, kusum, kusamo
+ 0  SCMI  Schleronema micranthum Ducke.                 cordeiro, scleronema
+ 1  SCVE  Sciadopitys verticillata 
+          (Thunb.) Sieb. & Zucc.                        Japanese umbrella pine, koyamaki pine
+ 1  SESE  Sequoia sempervirens (D. Don) Endl.           coast redwood
+ 2  SEGI  Sequoiadendron giganteum (Lindl.) Buchholz    giant sequoia
+ 0  SHRO  Shorea robusta Gaertn.f.                      sal
+ 0  SIAM  Simarouba amara Aubl.                         simarouba
+ 0  SOAM  Sorbus americana Marsh.                       mountain ash
+ 0  SOAR  Sorbus aria (L.) Crantz                       whitebeam
+ 0  SOAU  Sorbus aucuparia L.                           mountain ash, rowan
+ 1  SOTE  Sorbus torminalis (L.) Crantz                 chequer tree, wild service tree
+ 0  SODU  Sorocea duckei W.C. Burger
+          Stewartia koreana Rehd. = Stuartia pseudocamellia var. koreana (Rehd.) Sealy
+    STPS  Stuartia pseudocamelliad var. 
+          koreana (Rehd.) Sealy                         Korean stewartia
+ 0  SWLA  Swartzia laevicarpa Amsh.                     saboarana
+ 0  SWMC  Swietenia macrophylla King
+ 0  SWMA  Swietenia mahagoni Jacq.                      West Indies mahogany
+ 0  SYGL  Symphonia globulifera L.F.                    manil
+ 0  TABA  Tabebuia barbata (E. Mey) Sandw.              Igapo-tree
+ 0  TMAP  Tamarix aphylla Lanza                         dur
+ 1  TMCH  Tamarix chinensis Lour.                       tamarisk, salt cedar
+ 0  TMJO  Tamarix jordanis
+ 0  TPGU  Tapirira guianensis Aubl.                     tapirira, cedroi, jobo
+ 0  TMXE  Tasmannia xerophila M. Gray
+ 0  TAAS  Taxodium ascendens Brong.                     pond cypress
+ 2  TADI* Taxodium distichum (L.) Rich.                 baldcypress
+ 2  TAMU  Taxodium mucronatum Ten.                      Montezuma cypress
+ 1  TABA  Taxus baccata L.                              common yew, English yew
+ 1  TACU  Taxus cuspidata Sieb. & Zucc.                 Japanese yew
+ 1  TEGR  Tectona grandis L. f.                         teak
+ 0  TEBR  Terminalia brownii
+ 0  TEGU  Terminalia guianensis Aubl.
+ 0  TETO  Terminalia tomentosa W. & A.                  Indian laurel, taukkyan, sain
+ 1  TEAR  Tetraclinis articulata (Vahl) Mast.           Arar tree, African thuya
+    THSP  Thuja L.                                      thuja
+ 2  THOC* Thuja occidentalis L.                         northern white-cedar, American arborvitae
+ 0  THOR  Thuja orientalis L.                           Chinese arborvitae, Oriental arborvitae
+ 1  THPL* Thuja plicata Donn ex D. Don                  western redcedar, giant arborvitae
+ 1  THST  Thuja standishii (Gord.) Carr.                kurobe arborvitae, Japanese arborvitae
+ 1  THDO  Thujopsis dolabrata (L.f.) Sieb. & Zucc.      hiba arborvitae
+ 1  THHO  Thujopsis dolabrata var. hondai Makino        asunaro arborvitae
+    TISP  Tilia L.                                      linden, lime tree
+ 1  TIAM  Tilia americana L.                            American basswood
+ 1  TICO  Tilia cordata Mill.                           littleleaf linden, winter linden,
+                                                        small-leaved lime
+ 1  TIPL  Tilia platyphyllos Scop.                      broad-leaved linden, summer linden
+ 1  TOCA  Torreya californica Torrey                    California nutmeg
+ 0  TRSC  Triplochiton schleroxylon K. Schum.           abachi, obeche, wawa, arere
+ 0  TRCO  Tristania conferta R.Br.                      Queensland box tree
+    TSSP  Tsuga Carr.                                   hemlock
+ 2  TSCA* Tsuga canadensis (L.) Carr.                   eastern hemlock
+ 1  TSCR* Tsuga caroliniana Engelm.                     Carolina hemlock
+ 0  TSCH  Tsuga chinensis (Franch.) Pritz.              Chinese hemlock
+ 0  TSDI  Tsuga diversifolia (Maxim.) Mast.             Japanese hemlock
+ 1  TSDU  Tsuga dumosa (D.Don) Eichl.                   East Himalayan hemlock
+ 2  TSHE* Tsuga heterophylla (Raf.) Sarg.               western hemlock
+ 2  TSME* Tsuga mertensiana (Bong.) Carr.               mountain hemlock
+ 0  TSSI  Tsuga sieboldii Carr.                         southern Japanese hemlock
+    ULSP  Ulmus L.                                      elm
+          Ulmus campestris L. = Ulmus minor Mill.
+          Ulmus carpinifolia G. Suckow = Ulmus minor Mill.
+ 1  ULGL  Ulmus glabra Hudson                           Wych elm, Scots elm, mountain elm
+ 1  ULLA  Ulmus laevis Pall.                            European white elm
+ 1  ULMI  Ulmus minor Mill.                             smooth-leaved elm, field elm, common elm
+ 0  ULPU  Ulmus pumila L.                               Siberian elm
+ 1  ULRU  Ulmus rubra Muhl.                             slippery elm
+    UNKN                                                Unknown
+ 0  VBLA  Vibernum lantana L.
+ 0  VIME  Virola melinonii A.C. Smith                   mountain yayamadou, montagne yayamadou
+ 1  VIKE  Vitex keniensis Turr                          moru, moru oak
+ 0  VOAM  Vouacapoua americana Aubl.                    wacapou
+ 0  WERA  Weinmannia racemosa L.f.                      kamahi
+ 0  WETR  Weinmannia trichosperma Cav.                  tineo, tenio, palo santo
+ 1  WICE* Widdringtonia cedarbergensis J.A. Marsh       Clanwilliam cedar
+ 0  ZISP  Ziziphus spina-christi                        Judas tree, Christ thorn
+    ZYSP  Zygophyllum L.
+ 0  ZYDU  Zygophyllum dumosum Boiss.
