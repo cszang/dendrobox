@@ -1,2 +1,6 @@
 .Rhistory
 munge/data
+data/itrdb
+data/meta
+data/climate_raw
+acme.dump
