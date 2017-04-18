@@ -1,0 +1,6 @@
+</select>
+
+      &nbsp;contributed by&nbsp;
+      
+      <select id="resselect" onchange="changeSelection();" class="selector">
+        <option value="all investigators" selected>all investigators</option>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Dendrobox</title>
+    <link rel="shortcut icon" href="img//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="vendor/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="vendor/topojson.v0.min.js" charset="utf-8"></script>
+  </head>
+
+  <div id="ptitle">
+    <img src="./img/douglass_2.jpg" width = "60px">
+    <a class="title" href="index.html">Dendrobox</a>
+  </div>
+  <div id="nav">
+    <a href="about.html" alt="about this project">What is this?</a>
+  </div>
+  
+  <div id="content">
+
+    <div id="itrdbmap" class="map"></div>
+
+    <div id="selectmenu" class="selector">
+
+      show&nbsp;
+      
+      <select id="specselect" onchange="changeSelection();" class="selector">
+        <option label"all species" selected>all species</option>

@@ -1,0 +1,23 @@
+      </select>
+
+      &nbsp;<button type="button" onclick="refresh();">refresh</button> 
+      
+    </div>
+    <div id="light" class="white_content"></div>
+    <div id="fade" class="white_overlay"></div>
+
+    <div id="itrdbinfo"><span style="color:red;">&rArr;</span> Click to select a site, scroll to zoom the map, and drag to pan.</div>
+    <div id="chronograph" class="chrono"></div>
+    <div id="climateinfo" class="climate"></div>
+    <div id="dendroclim" class="dendroclim"></div>
+    <script src="./src/map.js"></script>
+    
+    <div id="footer">
+      Made with <span class="heart">&hearts;</span>
+      by <a href="http://czang.org">czang</a>.  View project
+      on <a href="http://github.com/cszang/dendrobox">GitHub</a>.
+      </br>If you use Dendrobox for your work, please cite it
+      (<a href="dendrobox.bib">BibTeX</a>, <a href="dendrobox.xml">EndNote</a>, <a href="dendrobox.ris">RIS</a>).
+    </div>
+  </div>
+</html>
